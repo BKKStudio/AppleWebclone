@@ -1,34 +1,45 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import { BsApple, BsSearch, BsBag, BsArrowRight } from "react-icons/bs";
+import {
+  BsApple,
+  BsSearch,
+  BsBag,
+  BsArrowRight,
+  BsChevronRight,
+} from "react-icons/bs";
 import SearchModal from "./SerchModal";
 import BagModal from "./BagModal";
 
 export default function Navbar() {
   const [ModalName, setModalName] = useState("");
-  const [ModalCancel, setModalCancel] = useState("hidden");
+  const [ModalCancel, setModalCancel] = useState("");
   return (
     <>
-      <nav className={`hidden lg:block`}>
+      <nav className={`hidden lg:block `}>
         <div
-          className={`text-center flex justify-center ${
+          className={`text-center flex justify-center  ${
             ModalName === ""
               ? "bg-gray-100 duration-500"
               : "bg-white  duration-500"
           }`}
         >
-          <div className="max-w-5xl w-full flex justify-between items-center gap-3 py-3 text-xs">
+          <div className="max-w-4xl w-full flex justify-between items-center gap-3 py-3 text-xs">
             <span className="">
               <Link className="" href={"/"}>
-                <BsApple size={16} className="text-gray-700" />
+                <BsApple size={14} className="text-gray-700" />
               </Link>
             </span>
             <div
               className="cursor-pointer"
               onMouseEnter={() => {
-                setModalName("Modalstore");
-                setModalCancel("hidden");
+                if (ModalName === "" && ModalCancel === "") {
+                  setModalName("Modalstore");
+                  setModalCancel("duration-700");
+                } else {
+                  setModalName("Modalstore");
+                  setModalCancel("hidden");
+                }
               }}
             >
               <span className="">ร้าน</span>
@@ -36,8 +47,13 @@ export default function Navbar() {
             <div
               className="cursor-pointer"
               onMouseEnter={() => {
-                setModalName("ModalMac");
-                setModalCancel("hidden");
+                if (ModalName === "" && ModalCancel === "") {
+                  setModalName("ModalMac");
+                  setModalCancel("duration-700");
+                } else {
+                  setModalName("ModalMac");
+                  setModalCancel("hidden");
+                }
               }}
             >
               <span className="">Mac</span>
@@ -45,8 +61,13 @@ export default function Navbar() {
             <div
               className="cursor-pointer"
               onMouseEnter={() => {
-                setModalName("Modalipads");
-                setModalCancel("hidden");
+                if (ModalName === "" && ModalCancel === "") {
+                  setModalName("Modalipads");
+                  setModalCancel("duration-700");
+                } else {
+                  setModalName("Modalipads");
+                  setModalCancel("hidden");
+                }
               }}
             >
               <span className="">iPads</span>
@@ -54,8 +75,13 @@ export default function Navbar() {
             <div
               className="cursor-pointer"
               onMouseEnter={() => {
-                setModalName("ModaliPhone");
-                setModalCancel("hidden");
+                if (ModalName === "" && ModalCancel === "") {
+                  setModalName("ModaliPhone");
+                  setModalCancel("duration-700");
+                } else {
+                  setModalName("ModaliPhone");
+                  setModalCancel("hidden");
+                }
               }}
             >
               <span className="">iPhone</span>
@@ -63,8 +89,13 @@ export default function Navbar() {
             <div
               className="cursor-pointer"
               onMouseEnter={() => {
-                setModalName("ModalWatch");
-                setModalCancel("hidden");
+                if (ModalName === "" && ModalCancel === "") {
+                  setModalName("ModalWatch");
+                  setModalCancel("duration-700");
+                } else {
+                  setModalName("ModalWatch");
+                  setModalCancel("hidden");
+                }
               }}
             >
               <span className="">Watch</span>
@@ -72,8 +103,13 @@ export default function Navbar() {
             <div
               className="cursor-pointer"
               onMouseEnter={() => {
-                setModalName("ModalAirPods");
-                setModalCancel("hidden");
+                if (ModalName === "" && ModalCancel === "") {
+                  setModalName("ModalAirPods");
+                  setModalCancel("duration-700");
+                } else {
+                  setModalName("ModalAirPods");
+                  setModalCancel("hidden");
+                }
               }}
             >
               <span className="">AirPods</span>
@@ -81,8 +117,13 @@ export default function Navbar() {
             <div
               className="cursor-pointer"
               onMouseEnter={() => {
-                setModalName("ModalTvandHome");
-                setModalCancel("hidden");
+                if (ModalName === "" && ModalCancel === "") {
+                  setModalName("ModalTvandHome");
+                  setModalCancel("duration-700");
+                } else {
+                  setModalName("ModalTvandHome");
+                  setModalCancel("hidden");
+                }
               }}
             >
               <span className="">Tvและบ้าน</span>
@@ -90,8 +131,13 @@ export default function Navbar() {
             <div
               className="cursor-pointer"
               onMouseEnter={() => {
-                setModalName("ModalEnvoriment");
-                setModalCancel("hidden");
+                if (ModalName === "" && ModalCancel === "") {
+                  setModalName("ModalEnvoriment");
+                  setModalCancel("duration-700");
+                } else {
+                  setModalName("ModalEnvoriment");
+                  setModalCancel("hidden");
+                }
               }}
             >
               <span className="">ความบันเทิง</span>
@@ -99,8 +145,13 @@ export default function Navbar() {
             <div
               className="cursor-pointer"
               onMouseEnter={() => {
-                setModalName("ModalAccessdories");
-                setModalCancel("hidden");
+                if (ModalName === "" && ModalCancel === "") {
+                  setModalName("ModalAccessdories");
+                  setModalCancel("duration-700");
+                } else {
+                  setModalName("ModalAccessdories");
+                  setModalCancel("hidden");
+                }
               }}
             >
               <span className="">อุปกรณ์เสริม</span>
@@ -108,8 +159,13 @@ export default function Navbar() {
             <div
               className="cursor-pointer"
               onMouseEnter={() => {
-                setModalName("ModalHelp");
-                setModalCancel("hidden");
+                if (ModalName === "" && ModalCancel === "") {
+                  setModalName("ModalHelp");
+                  setModalCancel("duration-700");
+                } else {
+                  setModalName("ModalHelp");
+                  setModalCancel("hidden");
+                }
               }}
             >
               <span className="">บริการช่วยเหลือ</span>
@@ -117,9 +173,13 @@ export default function Navbar() {
             <button
               className="cursor-pointer"
               onClick={() => {
-                console.log(ModalName);
-                setModalName("ModalSearch");
-                setModalCancel("hidden");
+                if (ModalName === "" && ModalCancel === "") {
+                  setModalName("ModalSearch");
+                  setModalCancel("duration-700");
+                } else {
+                  setModalName("ModalSearch");
+                  setModalCancel("hidden");
+                }
               }}
             >
               <BsSearch size={14} />
@@ -127,8 +187,13 @@ export default function Navbar() {
             <button
               className="cursor-pointer"
               onClick={() => {
-                setModalName("ModalBag");
-                setModalCancel("hidden");
+                if (ModalName === "" && ModalCancel === "") {
+                  setModalName("ModalBag");
+                  setModalCancel("duration-700");
+                } else {
+                  setModalName("ModalBag");
+                  setModalCancel("hidden");
+                }
               }}
             >
               <BsBag size={14} />
@@ -138,10 +203,11 @@ export default function Navbar() {
       </nav>
       {/* Model Store */}
       <div
-        className={` overflow-hidden ${
-          ModalName === "Modalstore" && ModalCancel === "hidden"
-            ? `opacity-100 w-full z-1  absolute h-110 backdrop-blur-md  flex flex-col duration-700`
-            : ` z-0 absolute w-full h-0 ${ModalCancel}`
+        className={` overflow-hidden   ${
+          (ModalName === "Modalstore" && ModalCancel === "duration-700") ||
+          (ModalName === "Modalstore" && ModalCancel === "hidden")
+            ? `opacity-100 w-full z-50  absolute h-110 backdrop-blur-md  flex flex-col duration-700`
+            : ` z-50 absolute w-full h-0 ${ModalCancel}`
         }`}
       >
         <div
@@ -258,20 +324,21 @@ export default function Navbar() {
       {/* ModelMac */}
       <div
         className={`overflow-hidden ${
-          ModalName === "ModalMac" && ModalCancel === "hidden"
-            ? `opacity-100 w-full z-1  absolute h-110 backdrop-blur-md flex flex-col duration-700`
-            : ` z-0 absolute w-full  h-0 ${ModalCancel}`
+          (ModalName === "ModalMac" && ModalCancel === "duration-700") ||
+          (ModalName === "ModalMac" && ModalCancel === "hidden")
+            ? `opacity-100 w-full z-50 absolute h-110 backdrop-blur-md flex flex-col duration-700`
+            : ` z-50 absolute w-full  h-0 ${ModalCancel}`
         }`}
       >
         <div
-          className={`w-full flex justify-center ${
+          className={`w-full flex justify-center  ${
             ModalName === ""
               ? "bg-gray-100 duration-500"
               : "bg-white duration-500"
           }`}
         >
           <div
-            className={`max-w-5xl w-full pt-12 mb-7 grid grid-cols-3 justify-center overflow-hidden`}
+            className={`max-w-5xl w-full pt-12 mb-7 grid grid-cols-3  justify-center overflow-hidden`}
           >
             <div className="flex flex-col ">
               <p className={`text-xs text-gray-600 mb-2 `}>ดูข้อมูล Mac</p>
@@ -421,7 +488,7 @@ export default function Navbar() {
         <div
           className={`w-full  h-full `}
           onMouseEnter={() => {
-            setModalCancel("duration-700")
+            setModalCancel("duration-700");
             setModalName("");
           }}
         ></div>
@@ -431,9 +498,10 @@ export default function Navbar() {
       {/* Modalipads*/}
       <div
         className={`overflow-hidden ${
-          ModalName === "Modalipads" && ModalCancel === "hidden"
-            ? `opacity-100 w-full z-1  absolute h-110 backdrop-blur-md  flex flex-col duration-700`
-            : ` z-0 absolute w-full h-0 ${ModalCancel}`
+          (ModalName === "Modalipads" && ModalCancel === "duration-700") ||
+          (ModalName === "Modalipads" && ModalCancel === "hidden")
+            ? `opacity-100 w-full z-50  absolute h-110 backdrop-blur-md  flex flex-col duration-700`
+            : ` z-50 absolute w-full h-0 ${ModalCancel}`
         }`}
       >
         <div
@@ -586,7 +654,7 @@ export default function Navbar() {
         <div
           className={`w-full  h-full`}
           onMouseEnter={() => {
-            setModalCancel("duration-700")
+            setModalCancel("duration-700");
             setModalName("");
           }}
         ></div>
@@ -596,9 +664,10 @@ export default function Navbar() {
       {/* ModeliPones */}
       <div
         className={`overflow-hidden ${
-          ModalName === "ModaliPhone" && ModalCancel === "hidden"
-            ? `opacity-100 w-full z-1  absolute h-110 backdrop-blur-md  flex flex-col duration-700`
-            : ` z-0 absolute w-full  h-0 ${ModalCancel}`
+          (ModalName === "ModaliPhone" && ModalCancel === "duration-700") ||
+          (ModalName === "ModaliPhone" && ModalCancel === "hidden")
+            ? `opacity-100 w-full z-50  absolute h-110 backdrop-blur-md  flex flex-col duration-700`
+            : ` z-50 absolute w-full  h-0 ${ModalCancel}`
         }`}
       >
         <div
@@ -749,7 +818,7 @@ export default function Navbar() {
         <div
           className={`w-full h-full`}
           onMouseEnter={() => {
-            setModalCancel("duration-700")
+            setModalCancel("duration-700");
             setModalName("");
           }}
         ></div>
@@ -759,9 +828,10 @@ export default function Navbar() {
       {/* ModalWatch */}
       <div
         className={`overflow-hidden ${
-          ModalName === "ModalWatch" && ModalCancel === "hidden"
-            ? `opacity-100 w-full z-1  absolute h-110 backdrop-blur-md  flex flex-col duration-700`
-            : ` z-0 absolute w-full  h-0 ${ModalCancel}`
+          (ModalName === "ModalWatch" && ModalCancel === "duration-700") ||
+          (ModalName === "ModalWatch" && ModalCancel === "hidden")
+            ? `opacity-100 w-full z-50  absolute h-110 backdrop-blur-md  flex flex-col duration-700`
+            : ` z-50 absolute w-full  h-0 ${ModalCancel}`
         }`}
       >
         <div
@@ -900,7 +970,7 @@ export default function Navbar() {
         <div
           className={`w-full h-full`}
           onMouseEnter={() => {
-            setModalCancel("duration-700")
+            setModalCancel("duration-700");
             setModalName("");
           }}
         ></div>
@@ -910,9 +980,10 @@ export default function Navbar() {
       {/*ModalAirPods */}
       <div
         className={`overflow-hidden ${
-          ModalName === "ModalAirPods" && ModalCancel === "hidden"
-            ? `opacity-100 w-full z-1  absolute h-110 backdrop-blur-md  flex flex-col duration-700`
-            : ` z-0 absolute w-full  h-0 ${ModalCancel}`
+          (ModalName === "ModalAirPods" && ModalCancel === "duration-700") ||
+          (ModalName === "ModalAirPods" && ModalCancel === "hidden")
+            ? `opacity-100 w-full z-50  absolute h-110 backdrop-blur-md  flex flex-col duration-700`
+            : ` z-50 absolute w-full  h-0 ${ModalCancel}`
         }`}
       >
         <div
@@ -1002,8 +1073,8 @@ export default function Navbar() {
         </div>
         <div
           className={`w-full  h-full`}
-          onMouseEnter={() =>{
-            setModalCancel("duration-700")
+          onMouseEnter={() => {
+            setModalCancel("duration-700");
             setModalName("");
           }}
         ></div>
@@ -1013,9 +1084,10 @@ export default function Navbar() {
       {/* ModalTvandHome */}
       <div
         className={`overflow-hidden ${
-          ModalName === "ModalTvandHome" && ModalCancel === "hidden"
-            ? `opacity-100 w-full z-1  absolute h-110 backdrop-blur-md  flex flex-col duration-700`
-            : ` z-0 absolute w-full  h-0 ${ModalCancel}`
+          (ModalName === "ModalTvandHome" && ModalCancel === "duration-700") ||
+          (ModalName === "ModalTvandHome" && ModalCancel === "hidden")
+            ? `opacity-100 w-full z-50  absolute h-110 backdrop-blur-md  flex flex-col duration-700`
+            : ` z-50 absolute w-full  h-0 ${ModalCancel}`
         }`}
       >
         <div
@@ -1126,7 +1198,7 @@ export default function Navbar() {
         <div
           className={`w-full  h-full`}
           onMouseEnter={() => {
-            setModalCancel("duration-700")
+            setModalCancel("duration-700");
             setModalName("");
           }}
         ></div>
@@ -1136,9 +1208,10 @@ export default function Navbar() {
       {/*ModalEnvoriment */}
       <div
         className={`overflow-hidden ${
-          ModalName === "ModalEnvoriment" && ModalCancel === "hidden"
-            ? `opacity-100 w-full z-1  absolute h-110 backdrop-blur-md  flex flex-col duration-700`
-            : ` z-0 absolute w-full  h-0 ${ModalCancel}`
+          (ModalName === "ModalEnvoriment" && ModalCancel === "duration-700") ||
+          (ModalName === "ModalEnvoriment" && ModalCancel === "hidden")
+            ? `opacity-100 w-full z-50  absolute h-110 backdrop-blur-md  flex flex-col duration-700`
+            : ` z-50 absolute w-full  h-0 ${ModalCancel}`
         }`}
       >
         <div
@@ -1223,8 +1296,8 @@ export default function Navbar() {
         </div>
         <div
           className={`w-full  h-full`}
-          onMouseEnter={() =>{
-            setModalCancel("duration-700")
+          onMouseEnter={() => {
+            setModalCancel("duration-700");
             setModalName("");
           }}
         ></div>
@@ -1234,9 +1307,11 @@ export default function Navbar() {
       {/* ModalAccessdories */}
       <div
         className={`overflow-hidden ${
-          ModalName === "ModalAccessdories" && ModalCancel === "hidden"
-            ? `opacity-100 w-full z-1  absolute h-110 backdrop-blur-md  flex flex-col duration-700`
-            : ` z-0 absolute w-full  h-0 ${ModalCancel}`
+          (ModalName === "ModalAccessdories" &&
+            ModalCancel === "duration-700") ||
+          (ModalName === "ModalAccessdories" && ModalCancel === "hidden")
+            ? `opacity-100 w-full z-50  absolute h-110 backdrop-blur-md  flex flex-col duration-700`
+            : ` z-50 absolute w-full  h-0 ${ModalCancel}`
         }`}
       >
         <div
@@ -1336,7 +1411,7 @@ export default function Navbar() {
         <div
           className={`w-full  h-full`}
           onMouseEnter={() => {
-            setModalCancel("duration-700")
+            setModalCancel("duration-700");
             setModalName("");
           }}
         ></div>
@@ -1346,9 +1421,10 @@ export default function Navbar() {
       {/* ModalHelp */}
       <div
         className={`overflow-hidden ${
-          ModalName === "ModalHelp" && ModalCancel === "hidden"
-            ? `opacity-100 w-full z-1  absolute h-110 backdrop-blur-md  flex flex-col duration-700`
-            : ` z-0 absolute w-full  h-0 ${ModalCancel}`
+          (ModalName === "ModalHelp" && ModalCancel === "duration-700") ||
+          (ModalName === "ModalHelp" && ModalCancel === "hidden")
+            ? `opacity-100 w-full z-50  absolute h-110 backdrop-blur-md  flex flex-col duration-700`
+            : ` z-50 absolute w-full  h-0 ${ModalCancel}`
         }`}
       >
         <div
@@ -1481,7 +1557,7 @@ export default function Navbar() {
         <div
           className={`w-full  h-full`}
           onMouseEnter={() => {
-            setModalCancel("duration-700")
+            setModalCancel("duration-700");
             setModalName("");
           }}
         ></div>
@@ -1505,6 +1581,16 @@ export default function Navbar() {
         setModalName={setModalName}
       />
       {/* ModalBag  */}
+      
+      {/* Text slide Down */}
+      <article className=" hidden lg:w-full lg:z-2 lg:flex justify-center  lg:items-center lg:text-sm  lg:overflow-hidden ">
+        <div className={`${ModalName === "" & ModalCancel === ""  ? "w-full h-full flex justify-center items-center gap-2   py-4 animate-animation-textslide  duration-500" : "w-full h-full flex justify-center items-center gap-2   py-4 "} `}>
+          มีการผ่อนชำระในอัตราดอกเบี้ย 0% นานสูงสุด 10 เดือน{" "}
+          <Link href={""} className="text-blue-600 flex items-center  ">
+            ดูเพิ่มเติม <BsChevronRight size={14} />
+          </Link>
+        </div>
+      </article>
     </>
   );
 }

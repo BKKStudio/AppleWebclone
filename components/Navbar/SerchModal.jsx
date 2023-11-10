@@ -14,9 +14,10 @@ export default function SearchModal({
       {/* ModelSearch */}
       <div
         className={`overflow-hidden ${
-          ModalName === "ModalSearch" && ModalCancel === "hidden"
-            ? `opacity-100 w-full z-1  absolute h-110 backdrop-blur-md flex flex-col duration-700`
-            : ` z-0 absolute w-full  h-0 ${ModalCancel}`
+          ModalName === "ModalSearch" && ModalCancel === "duration-700" ||
+          (ModalName === "ModalSearch" && ModalCancel === "hidden")
+            ? `opacity-100 w-full z-50  absolute h-110 backdrop-blur-md flex flex-col duration-700`
+            : ` z-50 absolute w-full  h-0 ${ModalCancel}`
         }`}
       >
         <div
@@ -26,10 +27,10 @@ export default function SearchModal({
               : "bg-white duration-500"
           }`}
         >
-          <div className={`max-w-5xl w-full mt-1  overflow-hidden`}>
-            <div className="mt-12 mb-7 grid grid-row-2 w-full">
+          <div className={`max-w-5xl w-full mt-1  overflow-hidden max-lg:px-7`}>
+            <div className="mt-12 max-lg:mt-3 mb-7 grid  grid-row-2 w-full">
               <div
-                className={`w-full flex items-center shadow-lg `}
+                className={`w-full flex items-center  `}
               >
                 <div className="p-4 bg-white">
                   <BsSearch size={15} />
@@ -40,38 +41,38 @@ export default function SearchModal({
                   placeholder=" ค้นหาใน apple.com"
                 ></input>
               </div>
-              <div className=" pt-7 flex flex-col gap-3">
+              <div className=" mt-7 flex flex-col">
                 <p
-                  className={`text-gray-300 font-bold text-xs `}
+                  className={`text-gray-400 font-bold text-xs max-lg:text-base `}
                 >
                   ลิงก์ด่วน
                 </p>
                 <p
-                  className={`text-gray-600 font-bold flex items-center  gap-2 text-xs hover:bg-gray-200 `}
+                  className={`text-gray-600 font-bold flex items-center max-lg:text-base  gap-2 text-xs py-1 hover:bg-gray-200 `}
                 >
                   <BsArrowRight size={15} />
                   <span>ของขวัญสำหรับช่วงเทศกาล</span>
                 </p>
                 <p
-                  className={`text-gray-600 font-bold flex items-center  gap-2 text-xs hover:bg-gray-200 `}
+                  className={`text-gray-600 font-bold flex items-center max-lg:text-base  gap-2 text-xs py-1 hover:bg-gray-200 `}
                 >
                   <BsArrowRight size={15} />
                   <span>ค้นหาร้าน</span>
                 </p>
                 <p
-                  className={`text-gray-600 font-bold flex items-center  gap-2 text-xs hover:bg-gray-200 `}
+                  className={`text-gray-600 font-bold flex items-center max-lg:text-base  gap-2 text-xs py-1 hover:bg-gray-200 `}
                 >
                   <BsArrowRight size={15} />
                   <span>อุปกรณ์เสริม</span>
                 </p>
                 <p
-                  className={`text-gray-600 font-bold flex items-center  gap-2 text-xs hover:bg-gray-200 `}
+                  className={`text-gray-600 font-bold flex items-center max-lg:text-base  gap-2 text-xs py-1 hover:bg-gray-200 `}
                 >
                   <BsArrowRight size={15} />
                   <span>บัตรของขวัญ</span>
                 </p>
                 <p
-                  className={`text-gray-600 font-bold flex items-center  gap-2 text-xs hover:bg-gray-200 $`}
+                  className={`text-gray-600 font-bold flex items-center max-lg:text-base  gap-2 text-xs py-1 hover:bg-gray-200 $`}
                 >
                   <BsArrowRight size={15} />
                   <span>Apple Trade In</span>
