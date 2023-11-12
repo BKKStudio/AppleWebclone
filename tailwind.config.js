@@ -49,7 +49,11 @@ module.exports = {
         'animation-textslide':'animation-textslide 4s linear 1',
       },
       maxWidth: {
+        'mg':'30rem',
         '8xl': '101rem',
+      },
+      maxHeight: {
+        'mg': '30rem',
       },
       height: {
         '100': '26rem',
@@ -60,6 +64,12 @@ module.exports = {
         'regal-blue': '#243c5a',
       },
       important:true,
+      width: {
+        '102': '30rem',
+      },
+      borderRadius: {
+        'xl':'1rem',
+      },
     },
   },
   plugins: [],

@@ -98,8 +98,8 @@ export default function Home() {
           </figure>
         </article>
         <article className="flex justify-center w-full h-full">
-          <figure className="max-w-8xl pb-10  w-full h-full">
-            <div className="px-7 w-full h-full">
+          <figure className="max-w-8xl pb-10  w-full h-full max-lg:px-7 ">
+            <div className="w-full h-full">
               <SlideNewProduct />
             </div>
           </figure>
