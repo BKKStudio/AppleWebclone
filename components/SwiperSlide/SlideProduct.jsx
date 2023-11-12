@@ -8,7 +8,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 // import required modules
-import { Pagination } from "swiper/modules";
+import {  FreeMode,Pagination } from "swiper/modules";
 
 
 export default function SlideProduct() {
@@ -42,7 +42,8 @@ export default function SlideProduct() {
       <Swiper
         slidesPerView={value}
         spaceBetween={30}
-        modules={[Pagination]}
+        freeMode={true}
+        modules={[FreeMode, Pagination]}
         className="mySwiper !z-0"
       >
         

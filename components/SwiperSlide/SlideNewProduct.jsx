@@ -12,7 +12,6 @@ import { FreeMode, Pagination } from "swiper/modules";
 
 export default function SlideNewProduct() {
   const [value, setValue] = useState(0);
-  const [hoverProduct, setHoverProduct] = useState(true);
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth >= 1025) {
@@ -21,7 +20,6 @@ export default function SlideNewProduct() {
         setValue(3);
       } else if (window.innerWidth <= 768 && window.innerWidth >= 0) {
         setValue(1);
-        setHoverProduct(false);
       }
     };
 
@@ -41,11 +39,11 @@ export default function SlideNewProduct() {
     <Swiper
       slidesPerView={value}
       spaceBetween={20}
-      freeMode={hoverProduct}
+      freeMode={true}
       modules={[FreeMode, Pagination]}
       className={`mySwiper !z-0  !px-4 !pb-10 `}
     >
-      <SwiperSlide className="!max-w-mg !rounded-xl ">
+      <SwiperSlide className="!max-w-mg  !rounded-xl ">
         <Link href={""} className="rounded-xl ">
           <div className="flex rounded-xl shadow-lg  hover:scale-104 hover:shadow-xl duration-500 ">
             <img
