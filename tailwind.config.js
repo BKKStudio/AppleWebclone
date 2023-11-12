@@ -44,13 +44,22 @@ module.exports = {
           '90%': { transform: 'translateY(0%)', backgroundColor: "white", color:'black',},
           '100%': { transform: 'translateY(0%)', backgroundColor: "white ", color:'black',},
         },
+        'animation-manu':{
+          '0%':{width:'480px'},
+          '25%':{width:'482px'},
+          '50%':{width:'484px'},
+          '75%':{width:'486px'},
+          '100%':{width:'488px'}
+        },
       },
       animation:{
         'animation-textslide':'animation-textslide 4s linear 1',
+        'animation-manu':'animation-manu 1s ease-in infinite' ,
       },
       maxWidth: {
         'mg':'30rem',
         '8xl': '101rem',
+        '9xl': '103rem',
       },
       maxHeight: {
         'mg': '30rem',
@@ -66,10 +75,17 @@ module.exports = {
       important:true,
       width: {
         '102': '30rem',
+        '103': '31rem',
       },
       borderRadius: {
-        'xl':'1rem',
+        'xl':'2rem',
       },
+      boxShadow: {
+        '3xl': '0 35px 60px -15px rgba(0, 0, 0, 0.3)',
+      },
+      scale: {
+        '104': '1.02',
+      }
     },
   },
   plugins: [],

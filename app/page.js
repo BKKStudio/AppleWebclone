@@ -14,7 +14,7 @@ export default function Home() {
       <main className="bg-gray-100">
         <article className="flex justify-center w-full">
           <figure className="max-w-8xl w-full">
-            <div className="py-20 flex justify-between  gap-4 max-md:flex-col max-lg:px-7 max-2xl:px-7">
+            <div className="lg:py-20 py-4 flex justify-between  gap-4 max-md:flex-col max-lg:px-7 max-2xl:px-7">
               <div className="hidden max-md:flex  md:flex-col  text-5xl font-bold text-gray-500 md:gap-2 max-lg:text-3xl">
                 <span>
                   <span className="text-red-600">ร้านของเรา</span>
@@ -97,9 +97,9 @@ export default function Home() {
             </div>
           </figure>
         </article>
-        <article className="flex justify-center w-full h-full">
-          <figure className="max-w-8xl pb-10  w-full h-full max-lg:px-7 ">
-            <div className="w-full h-full">
+        <article className="flex justify-center w-full  h-full">
+          <figure className="max-w-9xl pb-10 rounded-xl  w-full h-full max-lg:px-7 ">
+            <div className="w-full h-full  ">
               <SlideNewProduct />
             </div>
           </figure>
