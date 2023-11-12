@@ -21,7 +21,7 @@ export default function SlideNewProduct() {
         setValue(3);
       } else if (window.innerWidth <= 768 && window.innerWidth >= 0) {
         setValue(1);
-        setHoverProduct(false)
+        setHoverProduct(false);
       }
     };
 
@@ -43,32 +43,32 @@ export default function SlideNewProduct() {
       spaceBetween={20}
       freeMode={hoverProduct}
       modules={[FreeMode, Pagination]}
-      className={`mySwiper !z-0  !lg:px-4 !lg:pb-10`}
+      className={`mySwiper !z-0  !px-4 !pb-10 `}
     >
-      <SwiperSlide className=" !max-w-mg !w-full  !rounded-xl ">
+      <SwiperSlide className="!max-w-mg !rounded-xl ">
         <Link href={""} className="rounded-xl ">
-          <div className="flex shadow-lg rounded-xl hover:rounded-xl  hover:scale-104 hover:shadow-xl duration-500">
+          <div className="flex rounded-xl shadow-lg  hover:scale-104 hover:shadow-xl duration-500 ">
             <img
               width="480"
               height="500"
               alt="ดาวเคราะห์กระดาษล้อมรอบ iPhone 15 Pro รุ่นไทเทเนียม ที่มีระบบกล้องระดับโปร"
               src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-holiday-iphone-15-pro-202311?wid=960&amp;hei=1000&amp;fmt=p-jpg&amp;qlt=95&amp;.v=1696863030449"
               srcSet="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-holiday-iphone-15-pro-202311?wid=480&amp;hei=500&amp;fmt=p-jpg&amp;qlt=95&amp;.v=1696863030449, https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-holiday-iphone-15-pro-202311?wid=960&amp;hei=1000&amp;fmt=p-jpg&amp;qlt=95&amp;.v=1696863030449 2x"
-              className=" rounded-xl  "
+              className="rounded-xl"
             />
             <div className="z-50 absolute p-3 flex flex-col  w-44">
               <span className="text-xs text-gray-500 pb-2 ">ใหม่</span>
               <span className="text-xl text-black font-bold  pb-2">
                 iPhone 15 Pro
               </span>
-              <span className="text-base text-black pb-2">
+              <span className="text-base text-black pb-2 ">
                 เริ่มต้นที่ ฿41,900
               </span>
             </div>
           </div>
         </Link>
       </SwiperSlide>
-      <SwiperSlide className=" !max-w-mg   !rounded-xl ">
+      <SwiperSlide className="!max-w-mg    !rounded-xl ">
         <Link href={""} className="rounded-xl ">
           <div className="flex shadow-lg rounded-xl hover:rounded-xl  hover:scale-104 hover:shadow-xl duration-500">
             <img
@@ -91,7 +91,7 @@ export default function SlideNewProduct() {
           </div>
         </Link>
       </SwiperSlide>
-      <SwiperSlide className=" !max-w-mg   !rounded-xl ">
+      <SwiperSlide className="!max-w-mg    !rounded-xl ">
         <Link href={""} className="rounded-xl ">
           <div className="flex shadow-lg rounded-xl hover:rounded-xl  hover:scale-104 hover:shadow-xl duration-500">
             <img
@@ -137,7 +137,7 @@ export default function SlideNewProduct() {
           </div>
         </Link>
       </SwiperSlide>
-      <SwiperSlide className=" !max-w-mg   !rounded-xl ">
+      <SwiperSlide className="!max-w-mg  !rounded-xl ">
         <Link href={""} className="rounded-xl ">
           <div className="flex shadow-lg rounded-xl hover:rounded-xl  hover:scale-104 hover:shadow-xl duration-500">
             <img
@@ -158,7 +158,7 @@ export default function SlideNewProduct() {
           </div>
         </Link>
       </SwiperSlide>
-      <SwiperSlide className=" !max-w-mg   !rounded-xl ">
+      <SwiperSlide className=" !max-w-mg !rounded-xl ">
         <Link href={""} className="rounded-xl ">
           <div className="flex shadow-lg rounded-xl hover:rounded-xl  hover:scale-104 hover:shadow-xl duration-500">
             <img
@@ -181,7 +181,7 @@ export default function SlideNewProduct() {
           </div>
         </Link>
       </SwiperSlide>
-      <SwiperSlide className=" !max-w-mg   !rounded-xl ">
+      <SwiperSlide className="!max-w-mg !rounded-xl ">
         <Link href={""} className="rounded-xl ">
           <div className="flex shadow-lg rounded-xl hover:rounded-xl  hover:scale-104 hover:shadow-xl duration-500">
             <img
@@ -204,7 +204,7 @@ export default function SlideNewProduct() {
           </div>
         </Link>
       </SwiperSlide>
-      <SwiperSlide className=" !max-w-mg   !rounded-xl ">
+      <SwiperSlide className="!max-w-mg !rounded-xl ">
         <Link href={""} className="rounded-xl ">
           <div className="flex shadow-lg rounded-xl hover:rounded-xl  hover:scale-104 hover:shadow-xl duration-500">
             <img
@@ -227,7 +227,7 @@ export default function SlideNewProduct() {
           </div>
         </Link>
       </SwiperSlide>
-      <SwiperSlide className=" !max-w-mg   !rounded-xl ">
+      <SwiperSlide className="!max-w-mg !rounded-xl ">
         <Link href={""} className="rounded-xl ">
           <div className="flex shadow-lg rounded-xl hover:rounded-xl  hover:scale-104 hover:shadow-xl duration-500">
             <img
