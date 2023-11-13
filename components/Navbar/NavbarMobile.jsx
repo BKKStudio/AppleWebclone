@@ -25,7 +25,7 @@ export default function NavbarMobile() {
         }`}
       >
         <div className="flex justify-center">
-          <div className="max-w-5xl w-full px-7 flex  justify-between items-center gap-3 py-2 text-xs">
+          <div className="max-w-5xl w-full px-7 flex  justify-between items-center gap-3 py-4 text-xs">
             <span className="">
               <Link className="" href={"/"}>
                 <BsApple size={20} className="text-gray-700" />
@@ -257,12 +257,12 @@ export default function NavbarMobile() {
         {/* Model Searc */}
       </nav>
       {/* Text slide Down */}
-      <article className="lg:hidden w-full  flex justify-center  items-center text-sm  overflow-hidden ">
+      <article className="lg:hidden  w-full flex justify-center  items-center text-sm  overflow-hidden ">
         <div
           className={`${
             (ModalName === "" && ModalCancel === "")
-              ? "w-full h-full flex justify-center items-center gap-2 py-4 max-md:flex-col max-md:py-2 animate-animation-textslide  duration-500"
-              : "w-full h-full flex justify-center items-center gap-2 py-4  max-md:flex-col max-md:py-2"
+              ? "w-full h-full flex justify-center items-center  py-4 max-md:flex-col max-md:py-4 animate-animation-textslide  duration-500"
+              : "w-full h-full flex justify-center items-center  py-4  max-md:flex-col max-md:py-2"
           } `}
         >
           มีการผ่อนชำระในอัตราดอกเบี้ย 0% นานสูงสุด 10 เดือน{" "}

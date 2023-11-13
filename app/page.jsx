@@ -14,10 +14,10 @@ export default function Home() {
       <main className="bg-gray-100">
         <article className="flex justify-center w-full">
           <figure className="max-w-8xl w-full">
-            <div className="lg:py-20 py-4 flex justify-between  gap-4 max-md:flex-col max-lg:px-7 max-2xl:px-7">
+            <div className="lg:py-20 py-16 flex justify-between  gap-9 max-md:flex-col max-lg:px-7 max-2xl:px-7">
               <div className="hidden max-md:flex  md:flex-col  text-5xl font-bold text-gray-500 md:gap-2 max-lg:text-3xl">
                 <span>
-                  <span className="text-red-600">ร้านของเรา</span>
+                  <span className="text-red-600">ร้านของเรา  </span>
                   ช่วงเทศกาลมาถึงแล้วเซอร์ไพรส์ดีๆ รอคุณอยู่
                 </span>
               </div>
@@ -33,8 +33,8 @@ export default function Home() {
                   <img
                     src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-chat-specialist-icon-202311_AV1?wid=70&hei=70&fmt=jpeg&qlt=90&.v=1696434169764"
                     alt=""
-                    width={30}
-                    height={30}
+                    width={35}
+                    height={35}
                   ></img>
                   <div className="flex flex-col justify-center">
                     <span className="text-xs font-bold">
@@ -48,10 +48,10 @@ export default function Home() {
                     </Link>
                   </div>
                 </div>
-                <div className="flex items-center gap-3">
+                <div className="flex items-center gap-1">
                   <div className="flex justify-center ">
                     <svg
-                      width="25"
+                      width="35"
                       height="35"
                       viewBox="0 0 25 35"
                       className="dd-glyph-svg dd-glyph-base"
@@ -79,7 +79,7 @@ export default function Home() {
           </figure>
         </article>
         <article className="flex justify-center w-full">
-          <figure className="max-w-8xl w-full">
+          <figure className="max-w-8xl overflow-visible w-full">
             <div className="2xl:w-4/5 px-7 ">
               <SlideProducts />
             </div>
@@ -87,7 +87,7 @@ export default function Home() {
         </article>
         <article className="flex justify-center w-full">
           <figure className="max-w-8xl w-full">
-            <div className="pt-10 pb-4 flex justify-between  gap-4 max-md:flex-col max-lg:px-7 max-2xl:px-7">
+            <div className="pt-10 pb-5 flex justify-between  gap-4 max-md:flex-col max-lg:px-7 max-2xl:px-7">
               <div className="text-2xl font-bold text-gray-500 md:gap-2 ">
                 <span>
                   <span className="text-red-600">ผลิตภัณฑ์ล่าสุดของเรา</span>
@@ -98,9 +98,45 @@ export default function Home() {
           </figure>
         </article>
         <article className="flex justify-center w-full  h-full">
-          <figure className="max-w-9xl pb-10 rounded-xl  w-full h-full max-lg:px-7 ">
+          <figure className="max-w-9xl max-lg:px-4 pb-10  rounded-xl  w-full h-full  ">
             <div className="w-full h-full  ">
               <SlideNewProduct />
+            </div>
+          </figure>
+        </article>
+        <article className="flex justify-center w-full">
+          <figure className="max-w-8xl w-full">
+            <div className="pt-10 flex justify-between  gap-4 max-md:flex-col max-lg:px-7 max-2xl:px-7">
+              <div className="text-2xl font-bold text-gray-500 md:gap-2 ">
+                <span>
+                  <span className="text-red-600">ผลิตภัณฑ์ล่าสุดของเรา</span>
+                  ของขวัญชิ้นพิเศษสำหรับทุกคนพิเศษ
+                </span>
+              </div>
+            </div>
+          </figure>
+        </article>
+        <article className="flex justify-center w-full">
+          <figure className="max-w-8xl w-full">
+            <div className="pt-10 flex justify-between  gap-4 max-md:flex-col max-lg:px-7 max-2xl:px-7">
+              <div className="text-2xl font-bold text-gray-500 md:gap-2 ">
+                <span>
+                  <span className="text-red-600">ผลิตภัณฑ์ล่าสุดของเรา</span>
+                  ของขวัญชิ้นพิเศษสำหรับทุกคนพิเศษ
+                </span>
+              </div>
+            </div>
+          </figure>
+        </article>
+        <article className="flex justify-center w-full">
+          <figure className="max-w-8xl w-full">
+            <div className="pt-10 flex justify-between  gap-4 max-md:flex-col max-lg:px-7 max-2xl:px-7">
+              <div className="text-2xl font-bold text-gray-500 md:gap-2 ">
+                <span>
+                  <span className="text-red-600">ผลิตภัณฑ์ล่าสุดของเรา</span>
+                  ของขวัญชิ้นพิเศษสำหรับทุกคนพิเศษ
+                </span>
+              </div>
             </div>
           </figure>
         </article>

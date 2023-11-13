@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
       <body className="font-IBM">
         <Navbar />
         <NavbarMobile />
-        <div className="">{children}</div>
+        {children}
       </body>
     </html>
   );

@@ -44,7 +44,7 @@ export default function SlideProduct() {
         spaceBetween={30}
         freeMode={true}
         modules={[FreeMode, Pagination]}
-        className="mySwiper !z-0"
+        className="mySwiper !z-0   "
       >
         
         <SwiperSlide>

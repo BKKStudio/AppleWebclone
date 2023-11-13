@@ -66,7 +66,7 @@ module.exports = {
         'mg': '30rem',
       },
       height: {
-        '100': '26rem',
+        '100': '29rem',
         '102': '30rem',
         '110': '52rem',
       },
