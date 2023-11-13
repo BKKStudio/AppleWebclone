@@ -42,10 +42,10 @@ export default function SlideNewProduct() {
       spaceBetween={20}
       freeMode={true}
       modules={[FreeMode, Pagination]}
-      className={`mySwiper !z-0  !px-4  !pb-10 `}
+      className={`mySwiper !z-0 !w-full  !px-4   !pb-10 `}
     >
-      <SwiperSlide className="!max-w-mg  !w-full  !h-max !rounded-xl ">
-        <Link href={""} className="rounded-xl  ">
+      <SwiperSlide className="!max-w-mg   !w-full  !h-max !rounded-xl ">
+        <Link href={""} className="rounded-xl ">
           <div className="flex rounded-xl shadow-lg  hover:scale-104 hover:shadow-xl duration-500 ">
             <img
               width="480"
@@ -76,7 +76,7 @@ export default function SlideNewProduct() {
         </Link>
       </SwiperSlide>
 
-      <SwiperSlide className="!max-w-mg  !w-full !h-max !rounded-xl ">
+      <SwiperSlide className="!max-w-mg   !w-full !h-max !rounded-xl ">
         <Link href={""} className="rounded-xl  ">
           <div className="flex rounded-xl shadow-lg  hover:scale-104 hover:shadow-xl duration-500 ">
             <img
@@ -107,7 +107,7 @@ export default function SlideNewProduct() {
           </div>
         </Link>
       </SwiperSlide>
-      <SwiperSlide className="!max-w-mg  !w-full !h-max !rounded-xl ">
+      <SwiperSlide className="!max-w-mg   !w-full !h-max !rounded-xl ">
         <Link href={""} className="rounded-xl  ">
           <div className="flex rounded-xl shadow-lg  hover:scale-104 hover:shadow-xl duration-500 ">
             <img
@@ -138,7 +138,7 @@ export default function SlideNewProduct() {
           </div>
         </Link>
       </SwiperSlide>
-      <SwiperSlide className="!max-w-mg  !w-full !h-max !rounded-xl ">
+      <SwiperSlide className="!max-w-mg   !w-full !h-max !rounded-xl ">
         <Link href={""} className="rounded-xl  ">
           <div className="flex rounded-xl shadow-lg  hover:scale-104 hover:shadow-xl duration-500 ">
             <img
@@ -169,7 +169,7 @@ export default function SlideNewProduct() {
           </div>
         </Link>
       </SwiperSlide>
-      <SwiperSlide className="!max-w-mg  !w-full !h-max !rounded-xl ">
+      <SwiperSlide className="!max-w-mg   !w-full !h-max !rounded-xl ">
         <Link href={""} className="rounded-xl  ">
           <div className="flex rounded-xl shadow-lg  hover:scale-104 hover:shadow-xl duration-500 ">
             <img
@@ -198,7 +198,7 @@ export default function SlideNewProduct() {
           </div>
         </Link>
       </SwiperSlide>
-      <SwiperSlide className="!max-w-mg  !w-full !h-max !rounded-xl ">
+      <SwiperSlide className="!max-w-mg   !w-full !h-max !rounded-xl ">
         <Link href={""} className="rounded-xl  ">
           <div className="flex rounded-xl shadow-lg  hover:scale-104 hover:shadow-xl duration-500 ">
             <img
@@ -229,7 +229,7 @@ export default function SlideNewProduct() {
           </div>
         </Link>
       </SwiperSlide>
-      <SwiperSlide className="!max-w-mg  !w-full !h-max !rounded-xl ">
+      <SwiperSlide className="!max-w-mg   !w-full !h-max !rounded-xl ">
         <Link href={""} className="rounded-xl  ">
           <div className="flex rounded-xl shadow-lg  hover:scale-104 hover:shadow-xl duration-500 ">
             <img
@@ -260,7 +260,7 @@ export default function SlideNewProduct() {
           </div>
         </Link>
       </SwiperSlide>
-      <SwiperSlide className="!max-w-mg  !w-full !h-max !rounded-xl ">
+      <SwiperSlide className="!max-w-mg   !w-full !h-max !rounded-xl ">
         <Link href={""} className="rounded-xl  ">
           <div className="flex rounded-xl shadow-lg  hover:scale-104 hover:shadow-xl duration-500 ">
             <img
@@ -277,7 +277,7 @@ export default function SlideNewProduct() {
               alt="iPad Air สีม่วงที่หันหน้าและหันหลัง ล้อมรอบด้วยเมฆกระดาษ แสดงให้เห็นจอภาพ Liquid Retina พร้อมกล้องไวด์ 12 เมกะพิเซล"
               src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-holiday-ipad-air-202311_FMT_WHH?wid=309&amp;hei=450&amp;fmt=p-jpg&amp;qlt=95&amp;.v=1696863033049"
               srcset="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-holiday-ipad-air-202311_FMT_WHH?wid=309&amp;hei=450&amp;fmt=p-jpg&amp;qlt=95&amp;.v=1696863033049, https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-holiday-ipad-air-202311_FMT_WHH?wid=618&amp;hei=900&amp;fmt=p-jpg&amp;qlt=95&amp;.v=1696863033049 2x"
-              className="rounded-xl md:hidden"
+              className="rounded-xl w-full md:hidden"
             />
             <div className="z-50 absolute p-7 flex flex-col  w-full">
               <span className="text-xs text-gray-500 pb-2 ">ใหม่</span>
@@ -291,7 +291,7 @@ export default function SlideNewProduct() {
           </div>
         </Link>
       </SwiperSlide>
-      <SwiperSlide className="!max-w-mg  !w-full !h-max !rounded-xl ">
+      <SwiperSlide className="!max-w-mg  !md:w-max  !max-md:w-full !h-max !rounded-xl ">
         <Link href={""} className="rounded-xl  ">
           <div className="flex rounded-xl shadow-lg  hover:scale-104 hover:shadow-xl duration-500 ">
             <img
@@ -300,7 +300,7 @@ export default function SlideNewProduct() {
               alt="วงแหวนฟิตเนสที่ทำจากกระดาษวนรอบ Apple Watch SE ตัวเรือนอะลูมิเนียม สีสตาร์ไลท์ พร้อมสายแบบ Solo Loop สีส้มส้มซอร์เบ"
               src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-holiday-watch-se-202311?wid=960&amp;hei=1000&amp;fmt=p-jpg&amp;qlt=95&amp;.v=1696863032977"
               srcSet="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-holiday-watch-se-202311?wid=480&amp;hei=500&amp;fmt=p-jpg&amp;qlt=95&amp;.v=1696863032977, https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-holiday-watch-se-202311?wid=960&amp;hei=1000&amp;fmt=p-jpg&amp;qlt=95&amp;.v=1696863032977 2x"
-              className="rounded-xl max-md:hidden"
+              className="rounded-xl w-full max-md:hidden"
             />
             <img
               width="309"
