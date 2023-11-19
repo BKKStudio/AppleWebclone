@@ -71,7 +71,7 @@ export default function SlideHappy() {
       </SwiperSlide>
       <SwiperSlide className=" !flex !w-max gap-4">
         <Link href={""} className="rounded-xl ">
-          <div className="grid grid-col-2 bg-white items-center rounded-xl !h-102 shadow-lg  hover:scale-104 hover:shadow-xl duration-500 ">
+          <div className="grid grid-col-3 bg-white items-center rounded-xl !h-102 shadow-lg  hover:scale-104 hover:shadow-xl duration-500 ">
             <div className="relative">
               <img
                 width="200"
@@ -82,7 +82,7 @@ export default function SlideHappy() {
                 className="mt-10 h-max mx-16"
               />
             </div>
-            <div className="absolute w-full opacity-0  flex gap-1 justify-center  items-end mt-24 ">
+            <div className="w-full opacity-0  flex gap-1 justify-center  items-end  ">
               <img
                 width="12"
                 height="12"
@@ -138,7 +138,7 @@ export default function SlideHappy() {
       </SwiperSlide>
       <SwiperSlide className=" !flex !w-max gap-4">
         <Link href={""} className="rounded-xl ">
-          <div className="grid grid-col-2 bg-white items-center rounded-xl !h-102 shadow-lg  hover:scale-104 hover:shadow-xl duration-500 ">
+          <div className="grid grid-col-3 bg-white items-center rounded-xl !h-102 shadow-lg  hover:scale-104 hover:shadow-xl duration-500 ">
             <div className="relative">
               <img
                 width="200"
@@ -149,7 +149,7 @@ export default function SlideHappy() {
                 srcSet="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MT0X3?wid=200&amp;hei=200&amp;fmt=jpeg&amp;qlt=95&amp;.v=1699565518527, https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MT0X3?wid=400&amp;hei=400&amp;fmt=jpeg&amp;qlt=95&amp;.v=1699565518527 2x"
               ></img>
             </div>
-            <div className="absolute w-full  flex gap-1 justify-center  items-center mt-24 ">
+            <div className="w-full flex gap-1 justify-center  items-end  ">
               <img
                 width="12"
                 height="12"
@@ -213,7 +213,7 @@ export default function SlideHappy() {
       </SwiperSlide>
       <SwiperSlide className=" !flex !w-max gap-4">
         <Link href={""} className="rounded-xl ">
-          <div className="grid grid-col-2 bg-white items-center rounded-xl !h-102 shadow-lg  hover:scale-104 hover:shadow-xl duration-500 ">
+          <div className="grid grid-col-3 bg-white items-center rounded-xl !h-102 shadow-lg  hover:scale-104 hover:shadow-xl duration-500 ">
             <div className="relative">
               <img
                 width="200"
@@ -224,7 +224,7 @@ export default function SlideHappy() {
                 className="mt-10 h-max mx-16"
               ></img>
             </div>
-            <div className="absolute w-full  flex gap-1 justify-center  items-center mt-24 ">
+            <div className="w-full   flex gap-1 justify-center  items-end  ">
               <img
                 width="12"
                 height="12"
@@ -280,7 +280,7 @@ export default function SlideHappy() {
       </SwiperSlide>
       <SwiperSlide className=" !flex !w-max gap-4">
         <Link href={""} className="rounded-xl ">
-          <div className="grid grid-col-2 bg-white items-center rounded-xl !h-102 shadow-lg  hover:scale-104 hover:shadow-xl duration-500 ">
+          <div className="grid grid-col-3 bg-white items-center rounded-xl !h-102 shadow-lg  hover:scale-104 hover:shadow-xl duration-500 ">
             <div className="relative">
               <img
                 width="200"
@@ -291,7 +291,7 @@ export default function SlideHappy() {
                 className="mt-10 h-max mx-16"
               ></img>
             </div>
-            <div className="absolute w-full  flex gap-1 justify-center  items-center mt-24 ">
+            <div className="w-full flex gap-1 justify-center  items-end  ">
               <img
                 width="12"
                 height="12"
@@ -352,7 +352,7 @@ export default function SlideHappy() {
       </SwiperSlide>
       <SwiperSlide className=" !flex !w-max gap-4">
         <Link href={""} className="rounded-xl ">
-          <div className="grid grid-col-2 bg-white items-center rounded-xl !h-102 shadow-lg  hover:scale-104 hover:shadow-xl duration-500 ">
+          <div className="grid grid-col-3 bg-white items-center rounded-xl !h-102 shadow-lg  hover:scale-104 hover:shadow-xl duration-500 ">
             <div className="relative">
               <img
                 width="200"
@@ -363,7 +363,7 @@ export default function SlideHappy() {
                 className="mt-10 h-max mx-16"
               ></img>
             </div>
-            <div className="absolute w-full  flex gap-1 justify-center  items-center mt-24 "></div>
+            <div className="w-full opacity-0  flex gap-1 justify-center  items-end  "></div>
             <div className="flex  px-7 ">
               <div className="flex flex-col  w-full h-auto">
                 <span className="text-xs text-orange-600 font-bold  pb-2">
@@ -381,7 +381,7 @@ export default function SlideHappy() {
       </SwiperSlide>
       <SwiperSlide className=" !flex !w-max gap-4">
         <Link href={""} className="rounded-xl ">
-          <div className="grid grid-col-2 bg-white items-center rounded-xl !h-102 shadow-lg  hover:scale-104 hover:shadow-xl duration-500 ">
+          <div className="grid grid-col-3 bg-white items-center rounded-xl !h-102 shadow-lg  hover:scale-104 hover:shadow-xl duration-500 ">
             <div className="relative">
               <img
                 width="200"
@@ -392,7 +392,7 @@ export default function SlideHappy() {
                 className="mt-10 h-max mx-16"
               ></img>
             </div>
-            <div className="absolute w-full  flex gap-1 justify-center  items-center mt-24 ">
+            <div className="w-full   flex gap-1 justify-center  items-end  ">
               <img
                 width="12"
                 height="12"
@@ -448,7 +448,7 @@ export default function SlideHappy() {
       </SwiperSlide>
       <SwiperSlide className=" !flex !w-max gap-4">
         <Link href={""} className="rounded-xl ">
-          <div className="grid grid-col-2 bg-white items-center rounded-xl !h-102 shadow-lg  hover:scale-104 hover:shadow-xl duration-500 ">
+          <div className="grid grid-col-3 bg-white items-center rounded-xl !h-102 shadow-lg  hover:scale-104 hover:shadow-xl duration-500 ">
             <div className="relative">
               <img
                 width="200"
@@ -459,7 +459,7 @@ export default function SlideHappy() {
                 className="mt-10 h-max mx-16"
               ></img>
             </div>
-            <div className="absolute w-full  flex gap-1 justify-center  items-center mt-24 ">
+            <div className="w-full   flex gap-1 justify-center  items-end  ">
               <img
                 width="12"
                 height="12"

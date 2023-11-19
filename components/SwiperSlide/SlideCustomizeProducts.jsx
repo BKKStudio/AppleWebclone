@@ -138,7 +138,7 @@ export default function SlideCustomizeProducts() {
       </SwiperSlide>
       <SwiperSlide className=" !flex !w-max gap-4">
         <Link href={""} className="rounded-xl ">
-          <div className="grid grid-col-2 bg-white items-center rounded-xl !h-103 shadow-lg  hover:scale-104 hover:shadow-xl duration-500 ">
+          <div className="grid grid-col-3 bg-white items-center rounded-xl !h-103 shadow-lg  hover:scale-104 hover:shadow-xl duration-500 ">
             <div className="relative">
               <img
                 width="200"
@@ -149,7 +149,7 @@ export default function SlideCustomizeProducts() {
                 className="mt-10 h-max mx-16"
               />
             </div>
-            <div className="absolute w-full  flex gap-1 justify-center  items-end mt-36 ">
+            <div className=" w-full  flex gap-1 justify-center  items-end ">
               <img
                 width="12"
                 height="12"
