@@ -56,7 +56,7 @@ export default function SlideHappy() {
               alt="เนินเขากระดาษล้อมรอบเคสผ้า FineWoven พร้อม MagSafe สีเขียวเอเวอร์กรีน สำหรับ iPhone 15, Apple Watch Series 9 ตัวเรือนอะลูมิเนียม สีสตาร์ไลท์, สายแบบ Solo Loop สีส้มซอร์เบ และพวงกุญแจผ้า FineWoven สีม่วงเข้มมัลเบอร์รี่ สำหรับ AirTag"
               src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-holiday-quick-picks-202311?wid=400&amp;hei=500&amp;fmt=p-jpg&amp;qlt=95&amp;.v=1696863027393"
               srcSet="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-holiday-quick-picks-202311?wid=400&amp;hei=500&amp;fmt=p-jpg&amp;qlt=95&amp;.v=1696863027393, https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-holiday-quick-picks-202311?wid=800&amp;hei=1000&amp;fmt=p-jpg&amp;qlt=95&amp;.v=1696863027393 2x"
-              className="rounded-xl w-full h-max"
+              className="rounded-xl w-full h-full"
             ></img>
             <div className="z-50 absolute p-10 flex flex-col  w-full">
               <span className="text-xl max-md:text-lg text-black font-bold  pb-2">
