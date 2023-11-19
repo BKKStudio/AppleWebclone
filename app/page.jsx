@@ -1,23 +1,23 @@
-import Image from "next/image";
-import axios from "axios";
 import React from "react";
-import Navbar from "@/components/Navbar/Navbar";
-import NavbarMobile from "@/components/Navbar/NavbarMobile";
 import Link from "next/link";
 import { BsChevronRight } from "react-icons/bs";
-import SlideProducts from "@/components/SwiperSlide/SlideProduct";
-import SlideNewProduct from "@/components/SwiperSlide/SlideNewProduct";
+import SlideLatestProducts from "@/components/SwiperSlide/SlideLatestProducts";
+import SlideCustomizeProducts from "@/components/SwiperSlide/SlideCustomizeProducts";
+import SlideCategoryProduct from "@/components/SwiperSlide/SlideCategoryProduct";
+import SlideHappy from "@/components/SwiperSlide/SlideHappy";
+
 
 export default function Home() {
   return (
     <>
       <main className="bg-gray-100">
+        {/* Category Product Contents */}
         <article className="flex justify-center w-full">
           <figure className="max-w-8xl w-full">
             <div className="lg:py-20 py-16 flex justify-between  gap-9 max-md:flex-col max-lg:px-7 max-2xl:px-7">
               <div className="hidden max-md:flex  md:flex-col  text-5xl font-bold text-gray-500 md:gap-2 max-lg:text-3xl">
                 <span>
-                  <span className="text-red-600">ร้านของเรา  </span>
+                  <span className="text-red-600">ร้านของเรา </span>
                   ช่วงเทศกาลมาถึงแล้วเซอร์ไพรส์ดีๆ รอคุณอยู่
                 </span>
               </div>
@@ -80,66 +80,77 @@ export default function Home() {
         </article>
         <article className="flex justify-center w-full">
           <figure className="max-w-8xl overflow-visible w-full">
-            <div className="2xl:w-4/5 px-7 ">
-              <SlideProducts />
+            <div className=" 2xl:w-4/5 px-7 ">
+              <SlideCategoryProduct />
             </div>
           </figure>
         </article>
+        {/*End Category Product Contents */}
+        {/* Lastest Product Contents */}
         <article className="flex justify-center w-full">
           <figure className="max-w-8xl w-full">
             <div className="pt-10 pb-5 flex justify-between  gap-4 max-md:flex-col max-lg:px-7 max-2xl:px-7">
               <div className="text-2xl font-bold text-gray-500 md:gap-2 ">
                 <span>
-                  <span className="text-red-600">ผลิตภัณฑ์ล่าสุดของเรา</span>
+                  <span className="text-red-600">ผลิตภัณฑ์ล่าสุดของเรา </span>
                   ของขวัญชิ้นพิเศษสำหรับทุกคนพิเศษ
                 </span>
               </div>
             </div>
           </figure>
         </article>
-        <article className="flex justify-center w-full  h-full">
-          <figure className="max-w-9xl max-lg:px-4 pb-10    w-full h-full  ">
+        <article className="flex justify-center ">
+          <figure className="max-w-9xl max-lg:px-4  pb-3">
             <div className="">
-              <SlideNewProduct />
+              <SlideLatestProducts />
             </div>
           </figure>
         </article>
+        {/*End Lastest Product Contents */}
+        {/* Customize Product Contents */}
         <article className="flex justify-center w-full">
           <figure className="max-w-8xl w-full">
-            <div className="pt-10 flex justify-between  gap-4 max-md:flex-col max-lg:px-7 max-2xl:px-7">
+            <div className="pb-5 flex justify-between  gap-4 max-md:flex-col max-lg:px-7 max-2xl:px-7">
               <div className="text-2xl font-bold text-gray-500 md:gap-2 ">
                 <span>
-                  <span className="text-red-600">ผลิตภัณฑ์ล่าสุดของเรา</span>
-                  ของขวัญชิ้นพิเศษสำหรับทุกคนพิเศษ
+                  <span className="text-red-600">
+                    ปรับแต่งให้มีความเฉพาะตัว{" "}
+                  </span>
+                  สร้างความประทับใจแบบไม่ลืมเลือน
                 </span>
               </div>
             </div>
           </figure>
         </article>
+        <article className="flex justify-center ">
+          <figure className="max-w-9xl w-full   pb-6">
+            <div className="">
+              <SlideCustomizeProducts />
+            </div>
+          </figure>
+        </article>
+        {/*End  Customize Product Contents */}
+        {/* Happy give everyone in list Product Contents */}
         <article className="flex justify-center w-full">
           <figure className="max-w-8xl w-full">
-            <div className="pt-10 flex justify-between  gap-4 max-md:flex-col max-lg:px-7 max-2xl:px-7">
+            <div className="pb-5 flex justify-between  gap-4 max-md:flex-col max-lg:px-7 max-2xl:px-7">
               <div className="text-2xl font-bold text-gray-500 md:gap-2 ">
                 <span>
-                  <span className="text-red-600">ผลิตภัณฑ์ล่าสุดของเรา</span>
-                  ของขวัญชิ้นพิเศษสำหรับทุกคนพิเศษ
+                  <span className="text-red-600">ความสุขเล็กๆ </span>
+                  จัดให้ทุกคนในลิสต์ได้ในพริบตา
                 </span>
               </div>
             </div>
           </figure>
         </article>
-        <article className="flex justify-center w-full">
-          <figure className="max-w-8xl w-full">
-            <div className="pt-10 flex justify-between  gap-4 max-md:flex-col max-lg:px-7 max-2xl:px-7">
-              <div className="text-2xl font-bold text-gray-500 md:gap-2 ">
-                <span>
-                  <span className="text-red-600">ผลิตภัณฑ์ล่าสุดของเรา</span>
-                  ของขวัญชิ้นพิเศษสำหรับทุกคนพิเศษ
-                </span>
-              </div>
+        <article className="flex justify-center ">
+          <figure className="max-w-9xl w-full h-max  pb-3">
+            <div className="w-full h-full">
+              <SlideHappy />
             </div>
           </figure>
         </article>
+        {/*End  Customize Product Contents */}
       </main>
     </>
   );

@@ -68,6 +68,7 @@ module.exports = {
       height: {
         '100': '29rem',
         '102': '30rem',
+        '103': '37.5rem',
         '110': '52rem',
       },
       colors: {

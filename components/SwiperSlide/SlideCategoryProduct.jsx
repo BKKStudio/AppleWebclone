@@ -11,7 +11,7 @@ import "swiper/css/pagination";
 import {  FreeMode,Pagination } from "swiper/modules";
 
 
-export default function SlideProduct() {
+export default function SlideCategoryProduct() {
   const [value, setValue] = useState(0);
   useEffect(() => {
     const handleResize = () => {
@@ -44,7 +44,7 @@ export default function SlideProduct() {
         spaceBetween={30}
         freeMode={true}
         modules={[FreeMode, Pagination]}
-        className="mySwiper !z-0   "
+        className="mySwiper !z-0 "
       >
         
         <SwiperSlide>
