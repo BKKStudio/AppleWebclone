@@ -29,7 +29,7 @@ export default function SlideCustomizeProducts() {
               alt="กระดาษรูปคลื่นรอบ AirPods Pro (รุ่นที่ 2) สีขาว ที่มีก้านสั้นๆ พร้อมจุกหูฟังซิลิโคน รูลำโพงหันออกให้เห็น และเคสชาร์จที่มีอิโมจิทำมือสัญลักษณ์สันติภาพที่สลักอยู่บนด้านหน้าของเคส"
               src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-holiday-engraving-202311?wid=800&amp;hei=1000&amp;fmt=p-jpg&amp;qlt=95&amp;.v=1696863027293"
               srcSet="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-holiday-engraving-202311?wid=400&amp;hei=500&amp;fmt=p-jpg&amp;qlt=95&amp;.v=1696863027293, https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-holiday-engraving-202311?wid=800&amp;hei=1000&amp;fmt=p-jpg&amp;qlt=95&amp;.v=1696863027293 2x"
-              className="rounded-xl w-full max-md:hidden"
+              className="rounded-xl w-full h-full max-md:hidden"
             />
             <img
               width="309"
@@ -37,7 +37,7 @@ export default function SlideCustomizeProducts() {
               alt="กระดาษรูปคลื่นรอบ AirPods Pro (รุ่นที่ 2) สีขาว ที่มีก้านสั้นๆ พร้อมจุกหูฟังซิลิโคน รูลำโพงหันออกให้เห็น และเคสชาร์จที่มีอิโมจิทำมือสัญลักษณ์สันติภาพที่สลักอยู่บนด้านหน้าของเคส"
               src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-holiday-engraving-202311_FMT_WHH?wid=618&amp;hei=900&amp;fmt=p-jpg&amp;qlt=95&amp;.v=1696863027289"
               srcSet="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-holiday-engraving-202311_FMT_WHH?wid=309&amp;hei=450&amp;fmt=p-jpg&amp;qlt=95&amp;.v=1696863027289, https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-holiday-engraving-202311_FMT_WHH?wid=618&amp;hei=900&amp;fmt=p-jpg&amp;qlt=95&amp;.v=1696863027289 2x"
-              className="rounded-xl w-full md:hidden "
+              className="rounded-xl w-full h-full md:hidden "
             ></img>
             <div className="z-50 absolute p-10 flex flex-col  w-full">
               <span className="text-xl text-black font-bold  pb-2">
