@@ -59,10 +59,10 @@ export default function SlideHappy() {
               className="rounded-xl w-full"
             ></img>
             <div className="z-50 absolute p-10 flex flex-col  w-full">
-              <span className="text-xl text-black font-bold  pb-2">
+              <span className="text-xl max-md:text-lg text-black font-bold  pb-2">
                 เพิ่มความพิเศษอีกนิดให้กับ
               </span>
-              <span className="text-xl text-black font-bold  pb-2">
+              <span className="text-xl max-md:text-lg text-black font-bold  pb-2">
                 การเฉลิมฉลอง
               </span>
             </div>
