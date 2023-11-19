@@ -47,7 +47,7 @@ export default function SlideHappy() {
       modules={[FreeMode, Pagination]}
       className={`mySwiper !z-0  !px-5 !pb-10  `}
     >
-      <SwiperSlide className={`!max-w-mg  ${value} !h-max !rounded-xl`}>
+      <SwiperSlide className={`!max-w-mg  ${value} !h-102 !rounded-xl`}>
         <Link href={""} className="rounded-xl ">
           <div className=" flex rounded-xl shadow-lg h-102   hover:scale-104 hover:shadow-xl duration-500 ">
           <img
