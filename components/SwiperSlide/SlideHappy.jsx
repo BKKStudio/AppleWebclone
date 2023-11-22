@@ -17,9 +17,9 @@ export default function SlideHappy() {
     const handleResize = () => {
       if (window.innerWidth >= 1025) {
         setValue("!w-max");
-      }else if(window.innerWidth <= 1024 && window.innerWidth >= 769 ){
+      } else if (window.innerWidth <= 1024 && window.innerWidth >= 769) {
         setValue("!w-max");
-      }else if(window.innerWidth <= 768 && window.innerWidth >= 0 ){
+      } else if (window.innerWidth <= 768 && window.innerWidth >= 0) {
         setValue("!w-full");
       }
     };
@@ -28,16 +28,13 @@ export default function SlideHappy() {
     handleResize();
 
     // Event listener for window resize
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
 
     // Cleanup the event listener on component unmount
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
     };
   }, []); // Empty dependency array ensures that this effect runs once on mount
-
-
-
 
   return (
     <Swiper
@@ -50,7 +47,7 @@ export default function SlideHappy() {
       <SwiperSlide className={`!max-w-mg  ${value} !h-102 !rounded-xl`}>
         <Link href={""} className="rounded-xl ">
           <div className=" flex rounded-xl shadow-lg h-102   hover:scale-104 hover:shadow-xl duration-500 ">
-          <img
+            <img
               width="400"
               height="500"
               alt="เนินเขากระดาษล้อมรอบเคสผ้า FineWoven พร้อม MagSafe สีเขียวเอเวอร์กรีน สำหรับ iPhone 15, Apple Watch Series 9 ตัวเรือนอะลูมิเนียม สีสตาร์ไลท์, สายแบบ Solo Loop สีส้มซอร์เบ และพวงกุญแจผ้า FineWoven สีม่วงเข้มมัลเบอร์รี่ สำหรับ AirTag"
