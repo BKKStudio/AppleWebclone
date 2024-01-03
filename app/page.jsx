@@ -1,15 +1,31 @@
 "use client";
 import React from "react";
 import Link from "next/link";
-import ImgShopping from "../public/Images/ase-hero-202311_GEO_TH_LANG_TH.png";
-import ImgAppleWatch from "../public/Images/hero_apple_watch_series_9_order__d0fi9mb84dci_largetall_2x.png";
 import Image from "next/image";
 import { BsChevronRight, BsApple } from "react-icons/bs";
 import { useRouter } from "next/navigation";
 import SlideHome from "@/components/SwiperSlide/SlideHome";
+import { useState , useEffect } from "react";
 
 export default function Home() {
+  const [value,setValue] = useState(0)
   const router = useRouter();
+  useEffect(() => {
+    const handleResize = () => {
+setValue(window.innerWidth)
+    };
+
+    // Initial setup
+    handleResize();
+
+    // Event listener for window resize
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [value]); // Empty dependency array ensures that this effect runs once on mount
 
   const HandleLink = () => {
     router.push("/pages/Store");
@@ -25,20 +41,25 @@ export default function Home() {
               className="relative flex justify-center w-full h-max text-white"
             >
               <div className="w-full h-full overflow-hidden flex justify-center">
-                <img
+              <Image
                   src={
-                    "https://www.apple.com/v/home/bf/images/heroes/iphone-15-pro/hero_iphone15pro__i70z9oz3hj2i_mediumtall_2x.jpg"
+                    "/Images/hero_iphone15pro__i70z9oz3hj2i_mediumtall.jpg"
                   }
                   alt=""
-                  className="max-w-7xl  w-full object-fill max-md:hidden"
-                ></img>
-                <img
+                  width={value}
+                  height={300}
+                  className="max-w-7xl w-full h-full object-contain  max-md:hidden"
+                ></Image>
+                <Image
                   src={
-                    "https://www.apple.com/v/home/bf/images/heroes/iphone-15-pro/hero_iphone15pro__i70z9oz3hj2i_small.jpg"
+                    "/Images/hero_iphone15pro__i70z9oz3hj2i_small.jpg"
                   }
                   alt=""
-                  className="w-full h-max object-contain  md:hidden"
-                ></img>
+                  width={value}
+                  height={300}
+                  className="max-w-7xl  w-full object-fill md:hidden"
+                ></Image>
+            
               </div>
               <div className="absolute  md:pt-20  w-full flex justify-center">
                 <div className="max-md:pt-7 flex flex-col items-center gap-5">
