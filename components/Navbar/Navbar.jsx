@@ -42,7 +42,7 @@ export default function Navbar() {
                 }
               }}
             >
-              <span className="">ร้าน</span>
+              <Link href={"/pages/Store"} className="">ร้าน</Link>
             </div>
             <div
               className="cursor-pointer"

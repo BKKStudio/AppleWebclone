@@ -24,7 +24,7 @@ export default function Home() {
               href={""}
               className="relative flex justify-center w-full h-max text-white"
             >
-              <div className="flex justify-center">
+              <div className="w-full h-full overflow-hidden flex justify-center">
                 <img
                   src={
                     "https://www.apple.com/v/home/bf/images/heroes/iphone-15-pro/hero_iphone15pro__i70z9oz3hj2i_mediumtall_2x.jpg"
@@ -37,7 +37,7 @@ export default function Home() {
                     "https://www.apple.com/v/home/bf/images/heroes/iphone-15-pro/hero_iphone15pro__i70z9oz3hj2i_small.jpg"
                   }
                   alt=""
-                  className="max-w-7xl  w-full object-fill md:hidden"
+                  className="w-full h-max object-contain  md:hidden"
                 ></img>
               </div>
               <div className="absolute  md:pt-20  w-full flex justify-center">
@@ -104,37 +104,37 @@ export default function Home() {
           </figure>
         </article>
         <article className="flex justify-center w-full h-full">
-          <figure className="w-full h-full flex justify-center">
+          <figure className=" w-full h-full flex justify-center overflow-hidden">
             <Link href={""} className="relative w-full h-full text-white">
               <div className="flex justify-center w-full  h-full relative">
-                <video autoPlay muted loop>
+                <video autoPlay muted loop width="1920" height="360">
                   <source src="/Video/Apple.mp4" type="video/mp4" />
                 </video>
-                <div className="absolute grid grid-cols-3 w-full h-full pb-12">
-                  <div></div>
+                <div className="absolute  flex justify-center items-end w-full h-full lg:pb-12 max-lg:pb-4">
                   <div className="flex justify-center ">
                     <div className="flex justify-center items-end w-full">
-                      <div className="flex flex-col items-center justify-center">
+                      <div className="flex flex-col items-center justify-center w-full">
                         <div className="flex items-end text-4xl font-bold ">
-                          <BsApple className="p-1 mb-1 text-5xl max-lg:text-3xl" />
+                          <BsApple className="p-1 mb-1 text-5xl max-lg:text-xl" />
                           <span className="max-lg:text-xl"> WATCH</span>
                         </div>
-                        <span className="text-center max-lg:text-xs">SERIES 9</span>
+                        <span className="text-center max-lg:text-xs">
+                          SERIES 9
+                        </span>
                         <span className="text-center text-xl max-lg:text-xs">
                           แตะสองครั้ง วิธีใหม่ที่มหัศจรรย์ในการใช้ Apple Watch
                         </span>
                         <div className="flex items-center justify-center gap-4 mt-3 w-full max-lg:text-xs ">
-                          <span className="px-5 py-2 bg-white rounded-full text-black">
+                          <span className="max-lg:w-16 w-24 py-2 max-lg:text-xs bg-white rounded-full text-black text-center">
                             ดูเพิ่มเติม
                           </span>
-                          <span className="px-5 py-2 bg-white rounded-full text-black">
+                          <span className="px-5 py-2 max-lg:text-xs bg-white rounded-full text-black">
                             ซื้อ
                           </span>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div></div>
                 </div>
               </div>
             </Link>
@@ -153,7 +153,7 @@ export default function Home() {
                       "https://www.apple.com/th/home/images/promos/apple-watch-ultra-2/promo_apple_watch_ultra2_order__dyxqj5ia98om_large_2x.jpg"
                     }
                     alt=""
-                    className="max-w-7xl  w-full h-max pt-14 object-fill"
+                    className="w-max h-max pt-14 object-contain"
                   ></img>
                 </div>
                 <div className="absolute w-full flex justify-center absolute">
@@ -229,18 +229,18 @@ export default function Home() {
                 <div className="absolute w-full flex justify-center">
                   <div className="pt-7 flex flex-col items-center gap-5">
                     <div className="flex flex-col items-center">
-                      <span className="text-3xl max-md:text-2xl font-bold flex gap-1 ">
+                      <span className="text-3xl max-lg:text-xl font-bold flex gap-1 ">
                         iPad
                       </span>
-                      <span className="text-lg  max-md:text-lg  text-center text-gray-500">
+                      <span className="text-lg  max-lg:text-base  text-center text-gray-500">
                         รักเลย วาดเลย เอาใจไปเลย
                       </span>
                       <div className="pt-2 flex gap-2">
-                        <span className="text-base flex items-center gap-1 text-blue-600 hover:underline">
+                        <span className="text-base max-lg:text-xs flex items-center gap-1 text-blue-600 hover:underline">
                           <span>ดูก่อนใคร</span>
                           <BsChevronRight size={12} />
                         </span>
-                        <span className="text-base flex items-center gap-1 text-blue-600 hover:underline">
+                        <span className="text-base flex  max-lg:text-xs items-center gap-1 text-blue-600 hover:underline">
                           <span>ซื้อ</span>
                           <BsChevronRight size={12} />
                         </span>
@@ -265,19 +265,19 @@ export default function Home() {
                 <div className="absolute w-full flex justify-center">
                   <div className="pt-7 flex flex-col items-center gap-5">
                     <div className="flex flex-col items-center">
-                      <span className="text-3xl max-md:text-2xl font-bold flex gap-1 ">
+                      <span className="text-3xl max-lg:text-2xl font-bold flex gap-1 ">
                         AirPods Pro
                       </span>
-                      <span className="text-lg  max-md:text-lg  text-center text-white">
+                      <span className="text-lg   max-lg:text-base text-center text-white">
                         เสียงที่ปรับตามสภาพแวดล้อม <br />{" "}
                         ฟังความแตกต่างได้แล้ววันนี้
                       </span>
                       <div className="pt-2 flex gap-2">
-                        <span className="text-base flex items-center gap-1 text-blue-600 hover:underline">
+                        <span className="text-base  max-lg:text-xs flex items-center gap-1 text-blue-600 hover:underline">
                           <span>ดูก่อนใคร</span>
                           <BsChevronRight size={12} />
                         </span>
-                        <span className="text-base flex items-center gap-1 text-blue-600 hover:underline">
+                        <span className="text-base  max-lg:text-xs flex items-center gap-1 text-blue-600 hover:underline">
                           <span>ซื้อ</span>
                           <BsChevronRight size={12} />
                         </span>
@@ -302,18 +302,18 @@ export default function Home() {
                 <div className="absolute w-full flex justify-center">
                   <div className="pt-7 flex flex-col items-center gap-5">
                     <div className="flex flex-col items-center">
-                      <span className="text-3xl max-md:text-2xl font-bold flex gap-1 ">
+                      <span className="text-3xl max-lg:text-2xl font-bold flex gap-1 ">
                         iMac
                       </span>
-                      <span className="text-lg  max-md:text-lg text-center text-gray-600">
+                      <span className="text-lg  max-lg:text-base text-center text-gray-600">
                         จัดจ้านในพลัง
                       </span>
                       <div className="pt-2 flex gap-2">
-                        <span className="text-base flex items-center gap-1 text-blue-600 hover:underline">
+                        <span className="text-base flex  max-lg:text-xs items-center gap-1 text-blue-600 hover:underline">
                           <span>ดูก่อนใคร</span>
                           <BsChevronRight size={12} />
                         </span>
-                        <span className="text-base flex items-center gap-1 text-blue-600 hover:underline">
+                        <span className="text-base flex  max-lg:text-xs items-center gap-1 text-blue-600 hover:underline">
                           <span>ซื้อ</span>
                           <BsChevronRight size={12} />
                         </span>
@@ -326,22 +326,15 @@ export default function Home() {
                 href={""}
                 className="relative flex justify-center  w-full h-full  "
               >
-                <div className="flex justify-center">
-                  <img
-                    src={
-                      "https://www.apple.com/th/home/images/promos/ipad-pro/promo_ipadpro_refresh__evi9utuixwuq_large_2x.jpg"
-                    }
-                    alt=""
-                    className="max-w-7xl  w-full h-full object-cover"
-                  ></img>
-                  <div className="absolute w-full flex justify-center">
-                    <div className="pt-7 flex flex-col items-center gap-5">
+                <div className="flex flex-col justify-center">
+                  <div className=" w-full flex justify-center">
+                    <div className="pt-7 pt-2 flex flex-col items-center gap-5 bg-black w-full">
                       <div className="flex flex-col items-center">
-                        <span className="text-3xl max-md:text-2xl font-bold flex gap-1 text-white ">
+                        <span className="text-3xl max-lg:text-lg font-bold flex gap-1 text-white ">
                           iPad Pro
                         </span>
-                        <div className="flex items-center gap-1">
-                          <span className="text-base   text-center text-white">
+                        <div className="flex  items-center gap-1">
+                          <span className="text-base  max-lg:text-xs   text-center text-white">
                             อัดฉีดพลังแรงโดย
                           </span>
                           <img
@@ -353,24 +346,32 @@ export default function Home() {
                           ></img>
                         </div>
                         <div className="pt-2 flex gap-2">
-                        <span className="text-base flex items-center gap-1 text-blue-600 hover:underline">
-                          <span>ดูก่อนใคร</span>
-                          <BsChevronRight size={12} />
-                        </span>
-                        <span className="text-base flex items-center gap-1 text-blue-600 hover:underline">
-                          <span>ซื้อ</span>
-                          <BsChevronRight size={12} />
-                        </span>
-                      </div>
+                          <span className="text-base  max-lg:text-xs flex items-center gap-1 text-blue-600 hover:underline">
+                            <span>ดูก่อนใคร</span>
+                            <BsChevronRight size={12} />
+                          </span>
+                          <span className="text-base  max-lg:text-xs flex items-center gap-1 text-blue-600 hover:underline">
+                            <span>ซื้อ</span>
+                            <BsChevronRight size={12} />
+                          </span>
+                        </div>
                       </div>
                     </div>
                   </div>
+                  <img
+                    src={
+                      "https://www.apple.com/th/home/images/promos/ipad-pro/promo_ipadpro_refresh__evi9utuixwuq_large_2x.jpg"
+                    }
+                    alt=""
+                    className="max-w-7xl  w-full h-full object-cover"
+                  ></img>
                 </div>
               </Link>
             </div>
           </figure>
         </article>
         <SlideHome />
+        
       </main>
     </>
   );
