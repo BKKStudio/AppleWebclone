@@ -67,9 +67,9 @@ export default function Home() {
               href={""}
               className="relative flex flex-col justify-center w-full h-max text-white"
             >
-              <div className="  md:pt-20  w-full flex justify-center">
-                <div className="max-md:pt-7 flex flex-col items-center gap-5">
-                  <div className="flex flex-col items-center">
+              <div className="md:pt-20  w-full flex justify-center">
+                <div className="max-md:pt-3 flex flex-col items-center gap-5">
+                  <div className="absolute z-50  md:pt-14  flex flex-col items-center">
                     <span className="text-5xl max-md:text-xl font-bold flex gap-1 ">
                       iPhone 15 Pro
                     </span>
@@ -95,7 +95,7 @@ export default function Home() {
                   alt=""
                   width={value}
                   height={736}
-                  className="max-w-7xl w-full h-full object-contain  max-md:hidden "
+                  className="max-w-7xl scale-125 max-md:scale-200 pb-22   w-full h-full object-contain  max-md:hidden "
                   style={{ width: "auto", height: "auto" }}
                 ></Image>
                 <Image
@@ -103,7 +103,7 @@ export default function Home() {
                   alt=""
                   width={value}
                   height={736}
-                  className="max-w-7xl  w-full  object-fill md:hidden"
+                  className="max-w-7xl scale-175 pb-20 pt-14  w-full  object-fill md:hidden"
                   style={{ width: "auto", height: "auto" }}
                 ></Image>
               </div>
@@ -114,55 +114,67 @@ export default function Home() {
           <figure className=" w-full h-full">
             <div
               href={""}
-              className="p-2 w-full cursor-pointer"
+              className="p-2 w-full overflow-hidden cursor-pointer"
               onClick={HandleLink}
             >
-              <div className="w-full flex justify-center">
-                <div className="pt-7 flex flex-col items-center ">
-                  <span className="text-5xl text-center font-bold max-lg:text-3xl">
-                    iPhone 15
-                  </span>
-                  <div className="flex flex-col  items-center">
-                    <span className="text-xl  max-lg:text-base text-gray-700">
-                      กล้องใหม่ ดีไซน์ใหม่ รักครั้งใหม่
+              <div className="w-full  flex justify-center">
+                <div className="pt-7 w-full  md:h-105  flex flex-col items-center ">
+                  <div className="absolute z-50 pt-14 w-full  h-full  text-center">
+                    <span className="text-5xl text-center font-bold ">
+                      iPhone 15
                     </span>
-                    <div className="flex  items-center gap-3 mt-3">
-                      <span className="text-base  max-lg:text-xs flex items-center gap-1 text-blue-600 hover:underline">
-                        <span>ดูเพิ่มเติม</span>
-                        <BsChevronRight size={12} />
+                    <div className="flex flex-col  items-center">
+                      <span className="text-xl  max-lg:text-base text-gray-700">
+                        กล้องใหม่ ดีไซน์ใหม่ รักครั้งใหม่
                       </span>
-                      <span className="text-base max-lg:text-xs   flex items-center gap-1 text-blue-600 hover:underline">
-                        <span>ซื้่อ</span>
-                        <BsChevronRight size={12} />
-                      </span>
+                      <div className="flex  items-center gap-3 mt-3">
+                        <span className="text-base  max-lg:text-xs flex items-center gap-1 text-blue-600 hover:underline">
+                          <span>ดูเพิ่มเติม</span>
+                          <BsChevronRight size={12} />
+                        </span>
+                        <span className="text-base max-lg:text-xs   flex items-center gap-1 text-blue-600 hover:underline">
+                          <span>ซื้่อ</span>
+                          <BsChevronRight size={12} />
+                        </span>
+                      </div>
                     </div>
-                    <div className="flex justify-center w-full lg:pt-32">
-                      <Image
-                        src="/Images/iPhone15.jpg"
-                        className=" object-cover   w-full    bg-cover"
-                        alt=""
-                        width={value}
-                        height={736}
-                      ></Image>
-                    </div>
+                  </div>
+                  <div className=" flex justify-center   w-full h-full ">
+                    <Image
+                      src="/Images/hero_iphone15_announce__uuemlcwczn6u_small_2x.jpg"
+                      className=" object-contain scale-175    w-full  h-full  max-md:hidden   bg-cover"
+                      alt=""
+                      width={value}
+                      height={736}
+                    ></Image>
+                    <Image
+                      src="/Images/hero_iphone15_announce__uuemlcwczn6u_small_2x.jpg"
+                      className=" object-contain scale-175   pb-13 w-full  md:hidden   bg-cover"
+                      alt=""
+                      width={value}
+                      height={736}
+                    ></Image>
                   </div>
                 </div>
               </div>
             </div>
           </figure>
         </article>
-        <article className="flex justify-center items-end w-full h-full">
-          <figure className=" w-full h-full flex justify-center overflow-hidden">
-            <Link href={""} className="relative w-full h-full text-white">
-              <div className="flex flex-col justify-center w-full  h-full relative">
-                <div className="scale-100 w-full max-h-2xl h-full ">
+        <article className="flex justify-center items-end w-full  h-full">
+          <figure className=" w-full h-full flex justify-center  overflow-hidden">
+            <Link
+              href={""}
+              className="relative  max-md:py-48 w-full h-full text-white"
+            >
+              <div className="flex flex-col  justify-center w-full  h-full relative">
+                <div className="md:scale-100    scale-275 w-full h-full max-h-2xl h-full ">
                   <video autoPlay muted loop width={value} ref={videoRef}>
                     <source src="/Video/Apple.mp4" type="video/mp4" />
                   </video>
                 </div>
-                <div className="absolute flex justify-center items-end w-full h-full lg:pb-12 max-lg:pb-4">
-                  <div className="flex justify-center ">
-                    <div className="flex flex-col justify-center items-end w-full">
+                <div className="absolute flex justify-center  items-end w-full h-full md:pt-64 bg max-md:pt-80">
+                  <div className="flex justify-center  w-full h-full">
+                    <div className="flex flex-col justify-center items-end w-full h-full">
                       <div className="flex flex-col items-center justify-center w-full">
                         <div className="flex items-end text-4xl font-bold ">
                           <BsApple className="p-1 mb-1 text-5xl max-lg:text-xl" />
@@ -171,14 +183,19 @@ export default function Home() {
                         <span className="text-center max-lg:text-xs font-bold">
                           SERIES 9
                         </span>
-                        <span className="text-center text-xl max-lg:text-xs">
-                          แตะสองครั้ง วิธีใหม่ที่มหัศจรรย์ในการใช้ Apple Watch
+                        <span className="max-md:hidden text-center text-xl max-lg:text-lg">
+                          แตะสองครั้ง วิธีใหม่ ที่มหัศจรรย์ในการใช้ Apple Watch
                         </span>
+                        <span className="md:hidden text-center text-xl max-lg:text-lg">
+                          แตะสองครั้ง วิธีใหม่ <br /> ที่มหัศจรรย์ในการใช้{" "}
+                          <br /> Apple Watch
+                        </span>
+
                         <div className="flex items-center justify-center gap-4 mt-3 w-full max-lg:text-xs ">
-                          <span className="max-lg:w-16 w-24 py-2 max-lg:text-xs bg-white rounded-full text-black text-center">
+                          <span className="max-lg:w-24 w-24 py-2 max-lg:text-base bg-white rounded-full text-black text-center">
                             ดูเพิ่มเติม
                           </span>
-                          <span className="px-5 py-2 max-lg:text-xs bg-white rounded-full text-black">
+                          <span className="px-7 py-2 max-lg:text-base bg-white rounded-full text-black">
                             ซื้อ
                           </span>
                         </div>
@@ -191,7 +208,7 @@ export default function Home() {
           </figure>
           <div className="w-full absolute flex justify-end pr-4 pb-4">
             <div
-              className="bg-zinc-600 w-8 h-8 rounded-full text-xl flex items-center justify-center text-white cursor-pointer"
+              className="bg-zinc-600 w-8 h-8 rounded-full text-xl flex items-center justify-center text-white cursor-pointer max-md:hidden"
               onClick={HandlsStop}
             >
               <BsFillPauseFill
@@ -210,8 +227,8 @@ export default function Home() {
               href={""}
               className="  bg-white-gray  w-full h-full    overflow-hidden  "
             >
-              <div className="relative flex flex-col w-full h-max pb-24 items-center">
-                <div className="bg-white-gray flex flex-col justify-center items-center  z-50 pt-8  w-full">
+              <div className="relative  flex flex-col w-full h-max pb-24 items-center">
+                <div className="absolute  flex flex-col justify-center items-center   z-50 pt-8  w-full">
                   <span className="flex font-bold text-3xl">
                     <BsApple />
                     <h2 className="pt-1">WATCH</h2>
@@ -231,15 +248,24 @@ export default function Home() {
                     </span>
                   </span>
                 </div>
-                <div className="scale-150 flex  ">
+                <div className="md:pt-20  max-md:pt-24 flex  ">
+                <Image
+                    src="/Images/promo_apple_watch_ultra2_order__dyxqj5ia98om_medium_2x.jpg"
+                    alt=""
+                    width={value}
+                    height={1160}
+                    className="lg:px-10 md:hidden scale-125  object-center bg-center"
+                    style={{ width: "auto", height: "auto" }}
+                  />
                   <Image
                     src="/Images/promo_apple_watch_ultra2_order__dyxqj5ia98om_large.jpg"
                     alt=""
                     width={value}
                     height={1160}
-                    className="lg:px-10   object-center bg-center"
+                    className="lg:px-10 max-md:hidden scale-150  object-center bg-center"
                     style={{ width: "auto", height: "auto" }}
                   />
+             
                 </div>
               </div>
             </Link>
@@ -249,8 +275,8 @@ export default function Home() {
               href={""}
               className="  bg-white-gray  w-full h-full    overflow-hidden  "
             >
-              <div className="relative flex flex-col w-full h-max pb-24 items-center">
-                <div className="bg-white-gray flex flex-col justify-center items-center  z-50 pt-8  w-full">
+              <div className="relative flex flex-col w-full h-max max-md:pb-24  items-center">
+                <div className="absolute flex flex-col justify-center items-center  z-50 pt-8  w-full">
                   <span className="flex font-bold text-3xl">
                     <h2 className="pt-1">MacBook Pro</h2>
                   </span>
@@ -268,13 +294,21 @@ export default function Home() {
                     </span>
                   </span>
                 </div>
-                <div className="scale-150 flex  ">
+                <div className=" flex w-full h-full ">
                   <Image
                     src="/Images/promo_mbp__ek7p477bkp6q_large_2x.jpg"
                     alt=""
                     width={value}
                     height={1160}
-                    className="px-10   object-center bg-center"
+                    className="px-10 max-md:hidden pt-16 scale-150 object-center bg-center"
+                    style={{ width: "auto", height: "auto" }}
+                  />
+                      <Image
+                    src="/Images/promo_mbp__ek7p477bkp6q_medium_2x.jpg"
+                    alt=""
+                    width={value}
+                    height={1160}
+                    className="md:hidden    object-center bg-center"
                     style={{ width: "auto", height: "auto" }}
                   />
                 </div>

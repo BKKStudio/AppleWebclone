@@ -168,6 +168,7 @@ module.exports = {
         100: "29rem",
         102: "30rem",
         103: "37.5rem",
+        105: "44rem",
         110: "52rem",
       },
       colors: {
@@ -192,6 +193,14 @@ module.exports = {
       backgroundImage: {
         'iphone15': "url('https://www.apple.com/v/home/bh/images/heroes/iphone-15/hero_iphone15_announce__uuemlcwczn6u_largetall_2x.jpg')",
       },
+      scale: {
+        '175': '1.75',
+        '200': '2.00',
+        '275': '2.75',
+      },
+      zIndex: {
+        '100': '100',
+      }
    
     }
   },

@@ -20,7 +20,7 @@ export default function NavbarMobile() {
   return (
     <>
       <nav
-        className={`hidden max-lg:block ${
+        className={`hidden max-lg:block fixed z-100 w-full ${
           ModalName ? "bg-white duration-500 " : "bg-gray-100 duration-500 "
         }`}
       >
