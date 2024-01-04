@@ -13,21 +13,18 @@ export default function RootLayout({ children }) {
         <title>Apple Store แบบออนไลน์ - Apple (TH)</title>
         <link rel="icon" type="image/png" href="/Images/Icontitle.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true"/>
         <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="true"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai&display=swap"
+          href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500&display=swap"
           rel="stylesheet"
         />
       </head>
       <body className="font-IBM">
-        <Navbar/>
-        <NavbarMobile/>
+        <Navbar />
+        <NavbarMobile />
         {children}
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );
