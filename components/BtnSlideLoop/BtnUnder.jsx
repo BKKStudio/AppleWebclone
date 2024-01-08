@@ -10,7 +10,7 @@ export default function BtnunderSlide({
   DataSet
 }) {
   return (
-    <div className="flex gap-4 w-full justify-center">
+    <div className="flex  gap-2 max-md:gap-4 w-full justify-center">
       {/* ฺButton1 */}
       <button
         className={`w-2 h-2 rounded-full ${

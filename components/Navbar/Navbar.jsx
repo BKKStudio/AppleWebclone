@@ -18,7 +18,7 @@ export default function Navbar() {
     <>
       <nav className={`hidden lg:block `}>
         <div
-          className={`text-center flex justify-center  ${
+          className={`text-center flex   justify-center  ${
             ModalName === ""
               ? "bg-gray-100 duration-500"
               : "bg-white  duration-500"
@@ -1583,7 +1583,7 @@ export default function Navbar() {
       {/* ModalBag  */}
       
       {/* Text slide Down */}
-      <article className=" hidden lg:w-full lg:z-2 lg:flex justify-center  lg:items-center lg:text-sm  lg:overflow-hidden ">
+      <article className=" hidden lg:w-full lg:z-2  lg:flex justify-center  lg:items-center lg:text-sm  lg:overflow-hidden ">
         <div className={`${ModalName === "" & ModalCancel === ""  ? "w-full h-full flex justify-center items-center gap-2   py-4 animate-animation-textslide  duration-500" : "w-full h-full flex justify-center items-center gap-2   py-4 "} `}>
           มีการผ่อนชำระในอัตราดอกเบี้ย 0% นานสูงสุด 10 เดือน{" "}
           <Link href={""} className="text-blue-600 flex items-center  ">

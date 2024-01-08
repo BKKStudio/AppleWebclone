@@ -86,12 +86,14 @@ const SlideHome = () => {
       active: "false",
     },
   ]);
+
   const [DataImg, setDataImg] = useState(cards.slice(0, 11));
   const [NextIndex, setNextIndex] = useState(2);
   const [PosIndex, setPosIndex] = useState(0);
   const [StatusStop, setStatusStop] = useState(false);
   const interval1 = 4000;
-  const DataSet = cards.slice(1, 11);
+  const DataSet = cards.slice(1,11);
+
 
   useEffect(() => {
     if (StatusStop === false) {

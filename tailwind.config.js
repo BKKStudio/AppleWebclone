@@ -101,52 +101,47 @@ module.exports = {
         },
         "animation-slidehome": {
           "0%": {
-            opacity:"0",
+            opacity: "0",
             transform: "translateY(110%)",
-            
           },
           "10%": {
-            opacity:"10",
+            opacity: "10",
             transform: "translateY(100%)",
           },
           "20%": {
-            opacity:"20",
+            opacity: "20",
             transform: "translateY(40%)",
           },
           "30%": {
-            opacity:"30",
+            opacity: "30",
             transform: "translateY(10%)",
           },
           "40%": {
-            opacity:"40",
+            opacity: "40",
             transform: "translateY(0%)",
           },
           "50%": {
-            opacity:"50",
+            opacity: "50",
             transform: "translateY(0%)",
           },
           "60%": {
-            opacity:"60",
+            opacity: "60",
             transform: "translateY(0%)",
           },
           "70%": {
-            opacity:"70",
+            opacity: "70",
             transform: "translateY(0%)",
           },
           "80%": {
-            opacity:"80",
+            opacity: "80",
             transform: "translateY(0%)",
           },
-          "90%": {opacity:"90",
-            transform: "translateY(0%)",
-          },
+          "90%": { opacity: "90", transform: "translateY(0%)" },
           "100%": {
-            opacity:"100",
+            opacity: "100",
             transform: "translateY(0%)",
-
           },
         },
-    
       },
       animation: {
         "animation-textslide": "animation-textslide 4s linear 1",
@@ -161,26 +156,27 @@ module.exports = {
       },
       maxHeight: {
         mg: "30rem",
-        "2xl":"47rem",
-        "Manu":"100rem",
+        "2xl": "47rem",
+        Manu: "100rem",
+      },
+      width: {
+        62: "17rem",
+        70: "289px",
+        100: "34rem",
       },
       height: {
         100: "29rem",
-        102: "30rem",
+        102: "31rem",
         103: "37.5rem",
         105: "44rem",
         110: "52rem",
       },
       colors: {
         "regal-blue": "#243c5a",
-        "white-gray":"#fbfbfd"
+        "white-gray": "#fbfbfd",
       },
       important: true,
-      width: {
-        99: "28rem",
-        102: "30rem",
-        103: "31rem",
-      },
+
       borderRadius: {
         xl: "2rem",
       },
@@ -191,18 +187,18 @@ module.exports = {
         104: "1.02",
       },
       backgroundImage: {
-        'iphone15': "url('https://www.apple.com/v/home/bh/images/heroes/iphone-15/hero_iphone15_announce__uuemlcwczn6u_largetall_2x.jpg')",
+        iphone15:
+          "url('https://www.apple.com/v/home/bh/images/heroes/iphone-15/hero_iphone15_announce__uuemlcwczn6u_largetall_2x.jpg')",
       },
       scale: {
-        '175': '1.75',
-        '200': '2.00',
-        '275': '2.75',
+        175: "1.75",
+        200: "2.00",
+        275: "2.75",
       },
       zIndex: {
-        '100': '100',
-      }
-   
-    }
+        100: "100",
+      },
+    },
   },
   plugins: [],
 };
