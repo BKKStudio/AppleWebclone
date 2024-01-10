@@ -93,7 +93,7 @@ export default function Home() {
               <div className="w-full h-full overflow-hidden flex justify-center">
                 <Image
                   src={
-                    "/Images/iphone15/hero_iphone15pro__i70z9oz3hj2i_mediumtall.jpg"
+                    "/Images/Iphone15/hero_iphone15pro__i70z9oz3hj2i_mediumtall.jpg"
                   }
                   alt=""
                   width={value}
@@ -103,7 +103,7 @@ export default function Home() {
                 ></Image>
                 <Image
                   src={
-                    "/Images/iphone15/hero_iphone15pro__i70z9oz3hj2i_small.jpg"
+                    "/Images/Iphone15/hero_iphone15pro__i70z9oz3hj2i_small.jpg"
                   }
                   alt=""
                   width={value}
@@ -302,7 +302,7 @@ export default function Home() {
                 </div>
                 <div className=" flex w-full h-full pb-3">
                   <Image
-                    src="/Images/imac/promo_mbp__ek7p477bkp6q_large_2x.jpg"
+                    src="/Images/Imac/promo_mbp__ek7p477bkp6q_large_2x.jpg"
                     alt=""
                     width={value}
                     height={1160}
@@ -310,7 +310,7 @@ export default function Home() {
                     style={{ width: "auto", height: "auto" }}
                   />
                   <Image
-                    src="/Images/imac/promo_mbp__ek7p477bkp6q_medium_2x.jpg"
+                    src="/Images/Imac/promo_mbp__ek7p477bkp6q_medium_2x.jpg"
                     alt=""
                     width={value}
                     height={1160}
@@ -345,7 +345,7 @@ export default function Home() {
                 </div>
                 <div className=" flex  ">
                   <Image
-                    src="/Images/ipads/promo_ipad__fioegapg12qi_large_2x.jpg"
+                    src="/Images/Ipads/promo_ipad__fioegapg12qi_large_2x.jpg"
                     alt=""
                     width={value}
                     height={1160}
@@ -353,7 +353,7 @@ export default function Home() {
                     style={{ width: "auto", height: "auto" }}
                   />
                   <Image
-                    src="/Images/ipads/promo_ipad__fioegapg12qi_medium_2x.jpg"
+                    src="/Images/Ipads/promo_ipadpro_refresh__evi9utuixwuq_medium_2x.jpg"
                     alt=""
                     width={value}
                     height={548}
@@ -434,7 +434,7 @@ export default function Home() {
                 </div>
                 <div className="scale-150 flex  ">
                   <Image
-                    src="/Images/imac/promo_imac__crg641tip4q6_large_2x.jpg"
+                    src="/Images/Imac/promo_imac__crg641tip4q6_large_2x.jpg"
                     alt=""
                     width={value}
                     height={1160}
@@ -442,7 +442,7 @@ export default function Home() {
                     style={{ width: "auto", height: "auto" }}
                   />
                   <Image
-                    src="/Images/imac/promo_imac__crg641tip4q6_medium_2x.jpg"
+                    src="/Images/Imac/promo_imac__crg641tip4q6_medium_2x.jpg"
                     alt=""
                     width={value}
                     height={1160}
@@ -485,7 +485,7 @@ export default function Home() {
                 </div>
                 <div className="scale-150 flex  ">
                   <Image
-                    src="/Images/ipads/promo_ipadpro_refresh__evi9utuixwuq_large_2x.jpg"
+                    src="/Images/Ipads/promo_ipadpro_refresh__evi9utuixwuq_large_2x.jpg"
                     alt=""
                     width={value}
                     height={1160}
@@ -493,7 +493,7 @@ export default function Home() {
                     style={{ width: "auto", height: "auto" }}
                   />
                   <Image
-                    src="/Images/ipads/promo_ipadpro_refresh__evi9utuixwuq_medium_2x.jpg"
+                    src="/Images/Ipads/promo_ipadpro_refresh__evi9utuixwuq_medium_2x.jpg"
                     alt=""
                     width={value}
                     height={1160}
