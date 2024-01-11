@@ -142,12 +142,79 @@ module.exports = {
             transform: "translateY(0%)",
           },
         },
+
+        "animation-slidecardin": {
+          "0%": {
+            opacity: "0",
+            transform: "translateY(1.5rem)",
+          },
+          "10%": {
+            opacity: "10",
+            transform: "translateY(1.25rem)",
+          },
+          "20%": {
+            opacity: "20",
+            transform: "translateY(1.0rem)",
+          },
+          "30%": {
+            opacity: "30",
+            transform: "translateY(0.75rem)",
+          },
+          "40%": {
+            opacity: "40",
+            transform: "translateY(0.50rem)",
+          },
+          "50%": {
+            opacity: "50",
+            transform: "translateY(0.25rem)",
+          },
+          "60%": {
+            opacity: "60",
+            transform: "translateY(0.15rem)",
+          },
+          "70%": {
+            opacity: "70",
+            transform: "translateY(0rem)",
+          },
+          "90%": { opacity: "90", transform: "translateY(0rem)" },
+          "100%": {
+            opacity: "100",
+            transform: "translateY(0rem)",
+          },
+        },
+        
+        "animation-slidecardOut": {
+          "0%": {
+            opacity: "100",
+            transform: "translateY(0rem)",
+          },
+          "10%": {
+            opacity: "70",
+            transform: "translateY(0.15rem)",
+          },
+          "20%": {
+            opacity: "50",
+            transform: "translateY(0.25rem)",
+          },
+          "70%": {
+            opacity: "0",
+            transform: "translateY(1.5rem)",
+          },
+          "90%": { opacity: "0" },
+          "100%": {
+            opacity: "0",
+            transform: "translateY(1.5rem)",
+            display:"hidden"
+          },
+        },
       },
       animation: {
         "animation-textslide": "animation-textslide 4s linear 1",
         "animation-manu": "animation-manu 1s ease-in infinite",
         "slide-img": "slide-img 1s ease-in alternate",
         "animation-slidehome": "animation-slidehome 4s linear 1",
+        "animation-slidecardin": "animation-slidecardin 1s linear 1",
+        "animation-slidecardOut": "animation-slidecardOut .5s linear 1",
       },
       maxWidth: {
         mg: "30rem",
@@ -183,14 +250,12 @@ module.exports = {
       boxShadow: {
         "3xl": "0 35px 60px -15px rgba(0, 0, 0, 0.3)",
       },
-      scale: {
-        104: "1.02",
-      },
       backgroundImage: {
         iphone15:
           "url('https://www.apple.com/v/home/bh/images/heroes/iphone-15/hero_iphone15_announce__uuemlcwczn6u_largetall_2x.jpg')",
       },
       scale: {
+        104: "1.03",
         175: "1.75",
         200: "2.00",
         275: "2.75",

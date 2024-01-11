@@ -103,7 +103,7 @@ export default function NavbarMobile() {
             <div className={`max-w-5xl w-full pt-12 mb-5 flex overflow-hidden`}>
               <div className="flex flex-col w-full">
                 <Link
-                  href={""}
+                  href={"/pages/Store"}
                   className={` text-xl text-gray-600 mb-2 font-bold flex justify-between `}
                   onMouseEnter={() => setHoverAnimate("HoverStore")}
                 >
@@ -118,7 +118,7 @@ export default function NavbarMobile() {
                   />
                 </Link>
                 <Link
-                  href={""}
+                  href={"/pages/Shop/buy-mac"}
                   className={` text-xl text-gray-600 mb-2 font-bold flex justify-between `}
                   onMouseEnter={() => setHoverAnimate("HoverMac")}
                 >
@@ -256,7 +256,7 @@ export default function NavbarMobile() {
          <SearchModal ModalName={ModalName}  ModalCancel={ModalCancel} setModalCancel={setModalCancel} setModalName={setModalName} />
         {/* Model Searc */}
       </nav>
-      {/* Text slide Down */}
+      {/* Text slide Down
       <article className="lg:hidden  w-full flex justify-center  items-center text-sm  overflow-hidden ">
         <div
           className={`${
@@ -270,7 +270,7 @@ export default function NavbarMobile() {
             ดูเพิ่มเติม <BsChevronRight size={14} />
           </Link>
         </div>
-      </article>
+      </article> */}
     </>
   );
 }

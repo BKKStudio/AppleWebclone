@@ -10,6 +10,7 @@ import { BsFillPauseFill } from "react-icons/bs";
 import { BsFillPlayFill } from "react-icons/bs";
 import SlideHomeResponsive from "@/components/SwiperSlide/SlideHomeResponsive";
 import BtnunderSlide from "@/components/BtnSlideLoop/BtnUnder";
+import TextSlide from "@/components/TextSlide/Textslide";
 
 export default function Home() {
   const [value, setValue] = useState(0);
@@ -61,12 +62,15 @@ export default function Home() {
   return (
     <>
       <main className="bg-gray-100">
+        <article className="w-full pt-12 ">
+          <TextSlide />
+        </article>
         {/* Shopping Of Apple Store Content */}
         <article className="flex  justify-center bg-black w-full">
           <figure className="w-full flex justify-center">
             <Link
               href={""}
-              className="relative flex flex-col justify-center w-full h-max text-white"
+              className="relative  flex flex-col justify-center w-full h-max text-white"
             >
               <div className="md:pt-20  w-full flex justify-center">
                 <div className="max-md:pt-3  flex flex-col items-center gap-5">
@@ -510,7 +514,7 @@ export default function Home() {
           <SlideHome />
         </div>
         <div className="md:hidden  overflow-hidden">
-          <SlideHomeResponsive/>
+          <SlideHomeResponsive />
         </div>
       </main>
     </>

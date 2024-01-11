@@ -1,13 +1,13 @@
 import React from "react";
 import Link from "next/link";
 import { BsChevronRight } from "react-icons/bs";
-import SlideLatestProducts from "@/components/SwiperSlide/SlideLatestProducts";
-import SlideCustomizeProducts from "@/components/SwiperSlide/SlideCustomizeProducts";
-import SlideCategoryProduct from "@/components/SwiperSlide/SlideCategoryProduct";
-import SlideHappy from "@/components/SwiperSlide/SlideHappy";
-import SlideAppleFestival from "@/components/SwiperSlide/SlideAppleFestival";
-import SlideSurprise from "@/components/SwiperSlide/SlideSurprise";
-import SlideForStudent from "@/components/SwiperSlide/SlideForStudent";
+import SlideLatestProducts from "@/components/SwiperSlide/StorePages/SlideLatestProducts";
+import SlideCustomizeProducts from "@/components/SwiperSlide/StorePages/SlideCustomizeProducts";
+import SlideCategoryProduct from "@/components/SwiperSlide/StorePages/SlideCategoryProduct";
+import SlideHappy from "@/components/SwiperSlide/StorePages/SlideHappy";
+import SlideAppleFestival from "@/components/SwiperSlide/StorePages/SlideAppleFestival";
+import SlideSurprise from "@/components/SwiperSlide/StorePages/SlideSurprise";
+import SlideForStudent from "@/components/SwiperSlide/StorePages/SlideForStudent";
 
 export default function Storepage() {
   return (
