@@ -4,6 +4,14 @@ import TextSlide from "@/components/TextSlide/Textslide";
 import Link from "next/link";
 import { BsChevronRight, BsChevronLeft } from "react-icons/bs";
 import SlideAllModels from "@/components/SwiperSlide/Shop/Buymac/SlideAllModels";
+import SlideText from "@/components/SwiperSlide/Shop/Buymac/SlideText";
+import Shoppingadvice from "@/components/SwiperSlide/Shop/Buymac/Shoppingadvice";
+import SlideSaveCost from "@/components/SwiperSlide/Shop/Buymac/SlideSaveCost";
+import SlideAccessories from "@/components/SwiperSlide/Shop/Buymac/SlideAccessories";
+import SlideSetting from "@/components/SwiperSlide/Shop/Buymac/SlideSetting";
+import Slideexperience from "@/components/SwiperSlide/Shop/Buymac/Slideexperience";
+import Slidespecial from "@/components/SwiperSlide/Shop/Buymac/Slidespecial";
+import Footer from "@/components/Footer/Footer";
 
 export default function BuymacPage() {
   const [scrollTop, setScrollTop] = useState(0);
@@ -19,30 +27,6 @@ export default function BuymacPage() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
-  const HandlePrev = () => {
-    setValueSlide(0);
-  };
-
-  const HandleNext = () => {
-    setValueSlide(10);
-  };
-  const handleTouchMove = (event) => {
-    // Get the X coordinate of the touch/mouse move event
-    const clientX = event.touches ? event.touches[0].clientX : event.clientX;
-
-    // Adjust valueslide based on the direction of movement
-    const delta = clientX - ValueSlide;
-
-
-    // Update valueslide by adding or subtracting 10
-    const updatedValueSlide = ValueSlide + (delta > 0 ? -10 : 10);
-    // Limit valueslide to a maximum of 100
-    const limitedValueSlide = Math.max(Math.min(updatedValueSlide, 50), 0);
-
-    // Update state with the limited value
-    setValueSlide(limitedValueSlide);
-  };
 
   return (
     <React.Fragment>
@@ -60,8 +44,7 @@ export default function BuymacPage() {
             <div className="lg:py-20 py-16 flex justify-between  gap-9 max-md:flex-col max-lg:px-7 max-2xl:px-7">
               <div className="hidden max-md:flex  md:flex-col  text-5xl font-semibold text-gray-500 md:gap-2 max-lg:text-3xl">
                 <span>
-                  <span className="text-red-600">ซื้อ Mac</span>
-                  ช่วงเทศกาลมาถึงแล้วเซอร์ไพรส์ดีๆ รอคุณอยู่
+                  <span className="text-black">ซื้อ Mac</span>
                 </span>
               </div>
               <div className="hidden md:flex  flex-col text-5xl font-semibold text-gray-500 md:gap-2 max-lg:text-3xl">
@@ -121,54 +104,7 @@ export default function BuymacPage() {
         <article className="flex justify-center w-full">
           <figure className="max-w-8xl  w-full h-full ">
             <div className="max-lg:px-8 max-w-5xl max-lg:max-w-3xl w-full h-full overflow-hidden relative">
-              <div className=" w-max h-full flex  gap-12  " onTouchMove={handleTouchMove}>
-                <div className="  flex  gap-12  animation-slide-text duration-1000">
-                  <div className="font-bold">
-                    <span>ทุกรุ่น</span>
-                    <div className="w-full h-0.5 bg-black"></div>
-                  </div>
-                  <div className="">
-                    <span>คำแนะนำในการช็อปปิ้ง</span>
-                  </div>
-                  <div className="">
-                    <span>วิธีประหยัด</span>
-                  </div>
-                  <div className="">
-                    <span>อุปกรณ์เสริม</span>
-                  </div>
-                  <div className="">
-                    <span>การตั้งค่าและความช่วยเหลือ</span>
-                  </div>
-                  <div className="">
-                    <span>ประสบการณ์การใช้งาน Mac</span>
-                  </div>
-                  <div className="">
-                    <span>ร้านพิเศษของเรา</span>
-                  </div>
-                </div>
-                <div className=" absolute max-lg:hidden  flex items-center  justify-between max-w-5xl w-full h-full ">
-                  <button
-                    className={`bg-gray-100 p-2 ${
-                      ValueSlide === 0
-                        ? "opacity-0 duration-1000"
-                        : "opacity-100 duration-1000"
-                    }`}
-                    onClick={HandlePrev}
-                  >
-                    <BsChevronLeft />
-                  </button>
-                  <button
-                    className={`bg-gray-100 p-2 ${
-                      ValueSlide === 10
-                        ? "opacity-0 duration-1000"
-                        : "opacity-100 duration-1000"
-                    }`}
-                    onClick={HandleNext}
-                  >
-                    <BsChevronRight />
-                  </button>
-                </div>
-              </div>
+              <SlideText />
             </div>
           </figure>
         </article>
@@ -189,12 +125,267 @@ export default function BuymacPage() {
         <article className="flex justify-center ">
           <figure className="max-w-9xl w-full h-max  pb-3">
             <div className="w-full h-full ">
-             <SlideAllModels/>
+              <SlideAllModels />
             </div>
           </figure>
         </article>
         {/*All models content */}
+        {/*Shopping advice content */}
+        <article className="flex justify-center w-full">
+          <figure className="max-w-8xl w-full">
+            <div className="pt-10 pb-5 flex justify-between  gap-4 max-md:flex-col max-lg:px-7 max-2xl:px-7">
+              <div className="text-2xl font-bold text-gray-500 md:gap-2 ">
+                <span>
+                  <span className="text-black">คำแนะนำในการช้อปปิ้ง </span>
+                  ตัดสินใจไม่ได้ใช่มั้ย เริ่มต้นได้ที่นี่
+                </span>
+              </div>
+            </div>
+          </figure>
+        </article>
+        <article className="flex justify-center ">
+          <figure className="max-w-9xl w-full h-max  pb-3">
+            <div className="w-full h-full ">
+              <Shoppingadvice />
+            </div>
+          </figure>
+        </article>
+        {/*Shopping advice content */}
+        {/*Save Cost content */}
+        <article className="flex justify-center w-full">
+          <figure className="max-w-8xl w-full">
+            <div className="pt-10 pb-5 flex justify-between  gap-4 max-md:flex-col max-lg:px-7 max-2xl:px-7">
+              <div className="text-2xl font-bold text-gray-500 md:gap-2 ">
+                <span>
+                  <span className="text-black">วิธีประหยัด </span>
+                  หาวิธีที่เหมาะกับคุณที่สุด
+                </span>
+              </div>
+            </div>
+          </figure>
+        </article>
+        <article className="flex justify-center ">
+          <figure className="max-w-9xl w-full h-max  pb-3">
+            <div className="w-full h-full ">
+              <SlideSaveCost />
+            </div>
+          </figure>
+        </article>
+        {/*Save Cost content */}
+        {/*The Apple Store difference content */}
+        <article className="flex justify-center w-full">
+          <figure className="max-w-8xl w-full">
+            <div className="pt-10 pb-5 flex   gap-4 max-md:flex-col max-lg:px-7 max-2xl:px-7">
+              <div className="text-2xl font-bold text-gray-500 md:gap-2 ">
+                <span>
+                  <span className="text-black">
+                    ความแตกต่างของ Apple Store{" "}
+                  </span>
+                  อีกหลายเหตุผลในการเลือกซื้อกับเรา
+                </span>
+              </div>
+            </div>
+          </figure>
+        </article>
+        <article className="flex justify-center ">
+          <figure className="max-w-9xl w-full h-max   pb-3 max-lg:px-4">
+            <div className="max-w-5xl w-full h-full relative bg-white rounded-2xl shadow-xl hover:scale-104 duration-500">
+              <div className="absolute w-full h-full  flex flex-col items-center pt-8 ">
+                <span className="text-xl font-bold">ปรับแต่ง Mac ของคุณ</span>
+                <span className="text-base text-center">
+                  กำหนดสเปคในแบบที่คุณต้องการ เลือกได้ทั้งหน่วยความจำ
+                  พื้นที่จัดเก็บ กราฟิก แม้แต่สีสัน
+                </span>
+              </div>
+              <video autoPlay muted className=" pt-32 rounded-2xl">
+                <source
+                  src="/Video/ซื้อหรือแลกเปลี่ยน Mac - Apple (TH).mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+          </figure>
+        </article>
+        {/*The Apple Store difference content */}
+        {/*Accessories content */}
+        <article className="flex justify-center w-full">
+          <figure className="max-w-8xl w-full">
+            <div className="pt-10 pb-5 flex justify-between  gap-4 max-md:flex-col max-lg:px-7 max-2xl:px-7">
+              <div className="text-2xl font-bold text-gray-500 md:gap-2 ">
+                <span>
+                  <span className="text-black">อุปกรณ์เสริม </span>
+                  สร้างสรรค์มาเพื่อ Mac
+                </span>
+              </div>
+            </div>
+          </figure>
+        </article>
+        <article className="flex justify-center ">
+          <figure className="max-w-9xl w-full h-max  pb-3">
+            <div className="w-full h-full ">
+              <SlideAccessories />
+            </div>
+          </figure>
+        </article>
+        {/*Accessories content content */}
+        {/*Setting and Help content */}
+        <article className="flex justify-center w-full">
+          <figure className="max-w-8xl w-full">
+            <div className="pt-10 pb-5 flex justify-between  gap-4 max-md:flex-col max-lg:px-7 max-2xl:px-7">
+              <div className="text-2xl font-bold text-gray-500 md:gap-2 ">
+                <span>
+                  <span className="text-black">
+                    การตั้งค่าและความช่วยเหลือ{" "}
+                  </span>
+                  Specialist ของเราพร้อมช่วยเหลือคุณ
+                </span>
+              </div>
+            </div>
+          </figure>
+        </article>
+        <article className="flex justify-center ">
+          <figure className="max-w-9xl w-full h-max  pb-3">
+            <div className="w-full h-full ">
+              <SlideSetting />
+            </div>
+          </figure>
+        </article>
+        {/*Setting and Help  content */}
+        {/*experience content */}
+        <article className="flex justify-center w-full">
+          <figure className="max-w-8xl w-full">
+            <div className="pt-10 pb-5 flex justify-between  gap-4 max-md:flex-col max-lg:px-7 max-2xl:px-7">
+              <div className="text-2xl font-bold text-gray-500 md:gap-2 ">
+                <span>
+                  <span className="text-black">ประสบการณ์การใช้งาน Mac </span>
+                  ออกแบบมาเพื่อเชื่อมทุกอย่างที่เป็น Apple ให้เป็นหนึ่งเดียว
+                </span>
+              </div>
+            </div>
+          </figure>
+        </article>
+        <article className="flex justify-center ">
+          <figure className="max-w-9xl w-full h-max  pb-3">
+            <div className="w-full h-full ">
+              <Slideexperience />
+            </div>
+          </figure>
+        </article>
+        {/*experience  content */}
+        {/*Special shop content */}
+        <article className="flex justify-center w-full">
+          <figure className="max-w-8xl w-full">
+            <div className="pt-10 pb-5 flex justify-between  gap-4 max-md:flex-col max-lg:px-7 max-2xl:px-7">
+              <div className="text-2xl font-bold text-gray-500 md:gap-2 ">
+                <span>
+                  <span className="text-black">ร้านพิเศษของเรา </span>
+                  ส่วนลดพิเศษสำหรับนักศึกษา นักการศึกษา และนักธุรกิจ
+                </span>
+              </div>
+            </div>
+          </figure>
+        </article>
+        <article className="flex justify-center ">
+          <figure className="max-w-9xl w-full h-max  pb-3">
+            <div className="w-full h-full ">
+              <Slidespecial />
+            </div>
+          </figure>
+        </article>
+        {/*Special shop  content */}
       </main>
+      <footer className="w-full h-full flex justify-center bg-gray-100 pt-8 max-md:px-5">
+        <div className="max-w-7xl w-full h-full text-gray-700 flex flex-col">
+          <span className="text-xs pb-3">
+            ราคาสินค้าดังกล่าวได้รวมภาษีมูลค่าเพิ่มแล้ว
+            และไม่มีค่าธรรมเนียมการจัดส่งสินค้าทุกประเภท <br />
+            1. บริการแลกอุปกรณ์ดำเนินการโดยพันธมิตรด้านการแลกอุปกรณ์ของ Apple
+            มูลค่าการแลกอุปกรณ์เป็นการประมาณเท่านั้น
+            และมูลค่าที่แท้จริงอาจต่ำกว่าที่ประมาณไว้
+            มูลค่าการแลกแตกต่างกันไปตามสภาพ ปี และรุ่นของอุปกรณ์ที่คุณนำมาแลก
+            อุปกรณ์บางเครื่องอาจไม่เข้าเกณฑ์การรับเครดิต คุณต้องมีอายุอย่างน้อย
+            20 ปี จึงจะมีคุณสมบัติเข้าเกณฑ์การแลกรับเครดิตหรือบัตรของขวัญ Apple
+            Store
+            มูลค่าการแลกสามารถนำไปใช้ซื้ออุปกรณ์เครื่องใหม่ที่มึคุณสมบัติเข้าเกณฑ์
+            หรือเพิ่มลงในบัตรของขวัญ Apple Store
+            มูลค่าจริงที่จ่ายให้นั้นอ้างอิงจากการได้รับอุปกรณ์ที่เข้าเกณฑ์และตรงตามคำอธิบายขณะทำการประเมิน
+            ภาษีมูลค่าเพิ่ม (VAT)
+            อาจคิดจากมูลค่าเต็มของอุปกรณ์เครื่องใหม่ที่ซื้อ
+            การนำอุปกรณ์มาแลกภายในร้านจำเป็นต้องแสดงบัตรประจำตัวที่มีรูปถ่ายซึ่งออกให้โดยรัฐบาลและยังไม่หมดอายุ
+            (อาจต้องมีการบันทึกข้อมูลนี้ตามกฎหมายท้องถิ่น)
+            ข้อเสนออาจใช้ไม่ได้ในร้านค้าทุกแห่ง
+            และยังอาจแตกต่างกันไประหว่างการแลกอุปกรณ์ที่ร้านและทางออนไลน์
+            การนำคอมพิวเตอร์มาแลกอาจใช้ไม่ได้ในร้านค้าทุกแห่ง
+            ร้านค้าบางแห่งอาจมีข้อกำหนดเพิ่มเติม พันธมิตรด้านการแลกอุปกรณ์ของ
+            Apple
+            ขอสงวนสิทธิ์ในการปฏิเสธหรือจำกัดจำนวนธุรกรรมการแลกซื้ออุปกรณ์ไม่ว่าจะด้วยเหตุผลใดก็ตาม
+            สามารถดูรายละเอียดเพิ่มเติมจาก พันธมิตรด้านการแลกอุปกรณ์ ของ Apple
+            สำหรับการแลก และ พันธมิตรด้านการรีไซเคิล
+            สำหรับการรีไซเคิลอุปกรณ์ที่มีคุณสมบัติเข้าเกณฑ์
+            อาจมีการใช้ข้อกำหนดและข้อจำกัด อาจมีการใช้ข้อกำหนดและข้อจำกัดอื่นๆ
+            สำหรับอุปกรณ์ที่มีคุณสมบัติเข้าเกณฑ์การรีไซเคิล
+          </span>
+          <span className="text-xs pb-3">
+            2. เงื่อนไขสำหรับการผ่อนชำระเงินเป็นระยะเวลา 3 เดือน 6 เดือน และ 10
+            เดือน ด้วยอัตราดอกเบี้ย 0% ธนาคารซิตี้แบงก์ ธนาคารไทยพาณิชย์ จำกัด
+            มหาชน (SCB) ธนาคารกสิกรไทย จำกัด มหาชน (KBank) และ UOB
+            มีโครงการรับผ่อนชำระเงินด้วยอัตราดอกเบี้ย 0%
+            และจะมีขึ้นในบางช่วงเวลาเท่านั้น โดยดอกเบี้ย 0% สำหรับการผ่อนชำระ 3
+            เดือน 6 เดือน หรือ 10
+            เดือนจะมีขึ้นต่อเมื่อซื้อสินค้าที่มีราคามากกว่า 5,000 บาท
+            ทั้งนี้ธนาคารเจ้าของบัตรเครดิตเป็นผู้ขอสงวนสิทธิ์ในการพิจารณาอนุมัติการผ่อนชำระค่าสินค้าด้วยอัตราดอกเบี้ย
+            0% ที่คุณซื้อทั้งหมด โปรดดูเงื่อนไข ค่าธรรมเนียม และค่าบริการอื่นๆ
+            ที่กำหนดไว้ในเว็บไซต์ของ Citi PayLite, SCB, KBank หรือ UOB
+          </span>
+          <span className="text-xs pb-3">
+            ข้อตกลงและเงื่อนไข ข้อเสนอการผ่อนชำระมีให้กับเฉพาะลูกค้า Apple
+            ลูกค้าธุรกิจ และลูกค้าเพื่อการศึกษา ที่ใช้บัตรเครดิตเพื่อการบริโภค
+            การซื้อสินค้าด้วยบัตร อเมริกัน เอ็กซ์เพรส (AMEX)
+            และบัตรเดบิตจะไม่ได้รับสิทธิตามข้อเสนอนี้
+            ระบบจะเรียกเก็บเงินจากบัตรของคุณในช่วงเย็นของวันที่คุณทำการสั่งซื้อ
+            อนึ่งข้อเสนอเหล่านี้ใช้บังคับไปถึงการซื้อสินค้าผ่านโครงการซื้อสินค้าของลูกจ้าง
+            (Employee Purchase Program) และการซื้อสินค้ามือสองด้วย เจ้าหน้าที่
+            Apple ไม่มีหน้าที่ในการชี้แจงเหตุผลใดๆ
+            ในกรณีที่ธนาคารเจ้าของบัตรเครดิตไม่อนุมัติการสั่งซื้อสินค้าดังกล่าว
+            หากต้องการข้อมูลเพิ่มเติมเกี่ยวกับการผ่อนชำระค่าสินค้า
+            กรุณาติดต่อสอบถามไปยังธนาคารเจ้าของบัตรเครดิตของท่าน ธนาคารกรุงไทย
+            จำกัด (มหาชน) ธนาคารกรุงเทพ จำกัด (มหาชน) ธนาคารกรุงศรีอยุธยา จำกัด
+            (มหาชน) และธนาคารธนชาต จำกัด (มหาชน)
+            อาจเรียกเก็บดอกเบี้ยสำหรับการผ่อนชำระค่าสินค้าเป็นรายงวดผ่านบัตรของธนาคารดังกล่าว
+            ค่าธรรมเนียมทางการเงินที่เกี่ยวข้องจะเป็นไปตามที่ปรากฏในใบแจ้งยอดค่าใช้จ่ายผ่านบัตร
+            อนึ่งข้อเสนอนี้อยู่ภายใต้ราคาที่โฆษณา หรือราคาที่แสดงอยู่ที่สินค้า
+            ราคาสินค้าดังกล่าวได้รวมภาษีมูลค่าเพิ่มแล้ว
+            จัดส่งฟรีสำหรับทุกยอดสั่งซื้อ
+          </span>
+          <span className="text-xs pb-3">
+            ข้อมูลนี้เป็นข้อมูลล่าสุด ณ วันที่ 16 เมษายน 2021
+          </span>
+          <span className="text-xs pb-3">
+            ราคาสินค้าดังกล่าวได้รวมภาษีมูลค่าเพิ่มแล้ว
+            และไม่มีค่าธรรมเนียมการจัดส่งสินค้าทุกประเภท
+          </span>
+          <span className="text-xs pb-3">
+            3. ราคาพิเศษสำหรับลูกค้าที่มีคุณสมบัติตรงตามเงื่อนไข
+            หากต้องการข้อมูลเพิ่มเติมเกี่ยวกับเกณฑ์คุณสมบัติในการเลือกซื้อสินค้าราคาพิเศษ
+            แวะมาที่ร้านเพื่อพูดคุยกับ Specialist ของ Apple หรือโทรหาเราที่
+            1800-01-9209
+          </span>
+          <span className="text-xs pb-3">
+            ***
+            เฉพาะสมาชิกใหม่และสมาชิกที่กลับมาใช้บริการที่มีคุณสมบัติตรงตามเงื่อนไขเท่านั้น
+            ฿249/เดือน หลังหมดช่วงทดลองใช้ฟรี จำกัดหนึ่ง Apple ID
+            ต่อหนึ่งข้อเสนอเท่านั้น
+            และจำกัดหนึ่งครอบครัวต่อหนึ่งข้อเสนอเท่านั้นหากคุณเป็นสมาชิกในกลุ่มการแชร์กันในครอบครัว
+            ไม่ว่าคุณหรือครอบครัวของคุณจะซื้ออุปกรณ์กี่เครื่องก็ตาม
+            คุณหรือครอบครัวของคุณจะไม่มีสิทธิ์รับข้อเสนอนี้
+            หากเคยรับข้อเสนอใช้งาน Apple TV+ ฟรี 3 เดือน หรือ ฟรี 1
+            ปีมาก่อนหน้านี้ ข้อเสนอมีระยะเวลา 3
+            เดือนหลังการเปิดใช้งานอุปกรณ์ที่เข้าเกณฑ์
+            แผนบริการจะมีการต่ออายุโดยอัตโนมัติจนกว่าจะยกเลิก อาจมีข้อจำกัดและ
+            ข้อกำหนดอื่นๆ
+          </span>
+        </div>
+      </footer>
     </React.Fragment>
   );
 }
