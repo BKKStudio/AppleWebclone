@@ -11,7 +11,7 @@ import SlideAccessories from "@/components/SwiperSlide/Shop/Buymac/SlideAccessor
 import SlideSetting from "@/components/SwiperSlide/Shop/Buymac/SlideSetting";
 import Slideexperience from "@/components/SwiperSlide/Shop/Buymac/Slideexperience";
 import Slidespecial from "@/components/SwiperSlide/Shop/Buymac/Slidespecial";
-import Footer from "@/components/Footer/Footer";
+import { BsArrowUp } from "react-icons/bs";
 
 export default function BuymacPage() {
   const [scrollTop, setScrollTop] = useState(0);
@@ -30,12 +30,17 @@ export default function BuymacPage() {
 
   return (
     <React.Fragment>
-      <style>{`
-    .animation-slide-text {
-      transform: translateX(-${ValueSlide}%);
-    }
-  `}</style>
-      <main className="bg-gray-100 ">
+      <main className="bg-gray-100 relative ">
+        <aside className="fixed flex items-end justify-end  w-full h-full">
+          <div className={`px-8 py-3 shadow-lg   rounded-full bg-gray-300 mb-14 mr-12 ${scrollTop >= 4400 ? "opacity-100 duration-1000" : "opacity-0 duration-1000"}`} onClick={() => {
+          window.scrollTo({
+            top:0,
+            behavior: 'smooth', // Optional: animated smooth scroll
+          });
+        }}>
+            <BsArrowUp />
+          </div>
+        </aside>
         <article className="w-full pt-12 bg-white">
           <TextSlide />
         </article>

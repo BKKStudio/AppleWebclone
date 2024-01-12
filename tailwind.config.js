@@ -182,7 +182,6 @@ module.exports = {
             transform: "translateY(0rem)",
           },
         },
-        
         "animation-slidecardOut": {
           "0%": {
             opacity: "100",
@@ -207,6 +206,39 @@ module.exports = {
             display:"hidden"
           },
         },
+        "animation-onTop": {
+          "0%": {
+            transform: "translateY(-1rem)",
+          },
+          "10%": {
+            transform: "translateY(-0.25rem)",
+          },
+          "20%": {
+            transform: "translateY(-0.50rem)",
+          },
+          "30%": {
+            transform: "translateY(-0.75rem)",
+          },
+          "40%": {
+            transform: "translateY(0rem)",
+          },
+          "50%": {
+            transform: "translateY(0.25rem)",
+          },
+          "60%": {
+            transform: "translateY(0.50rem)",
+          },
+          "70%": {
+            transform: "translateY(0.75rem)",
+          },
+          "80%": {
+            transform: "translateY(1rem)",
+          },
+          "90%": { },
+          "100%": {
+            transform: "translateY(1rem)",
+          },
+        },
       },
       animation: {
         "animation-textslide": "animation-textslide 4s linear 1",
@@ -215,6 +247,7 @@ module.exports = {
         "animation-slidehome": "animation-slidehome 4s linear 1",
         "animation-slidecardin": "animation-slidecardin 1s linear 1",
         "animation-slidecardOut": "animation-slidecardOut .5s linear 1",
+        "animation-onTop": "animation-onTop 1s ease-in infinite",
       },
       maxWidth: {
         mg: "30rem",

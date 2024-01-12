@@ -35,6 +35,9 @@ export default function SlideText() {
     };
   }, []); // Empty dependency array ensures that this effect runs once on mount
 
+
+  
+
   return (
     <div className="">
       <Swiper
@@ -44,37 +47,72 @@ export default function SlideText() {
         modules={[FreeMode, Pagination]}
         className="mySwiper !z-0"
       >
-        <SwiperSlide className="!w-max">
+        <SwiperSlide className="!w-max cursor-pointer" onClick={() => {
+          window.scrollTo({
+            top: 380,
+            behavior: 'smooth', // Optional: animated smooth scroll
+          });
+        }}>
           <div className="flex justify-center px-4 py-2 rounded-full bg-gray-200">
             <span className="text-base hover:underline ">ทุกรุ่น</span>
           </div>
         </SwiperSlide>
-        <SwiperSlide className="!w-max">
+        <SwiperSlide className="!w-max cursor-pointer" onClick={() => {
+          window.scrollTo({
+            top: 1000,
+            behavior: 'smooth', // Optional: animated smooth scroll
+          });
+        }}>
           <div className="flex justify-center px-4 py-2 rounded-full bg-gray-200">
             <span className="text-base hover:underline ">คำแนะนำในการช็อปปิ้ง</span>
           </div>
         </SwiperSlide>
-        <SwiperSlide className="!w-max">
+        <SwiperSlide className="!w-max cursor-pointer" onClick={() => {
+          window.scrollTo({
+            top: 1700,
+            behavior: 'smooth', // Optional: animated smooth scroll
+          });
+        }}>
           <div className="flex justify-center px-4 py-2 rounded-full bg-gray-200">
             <span className="text-base hover:underline ">วิธีประหยัด</span>
           </div>
         </SwiperSlide>
-        <SwiperSlide className="!w-max">
+        <SwiperSlide className="!w-max cursor-pointer" onClick={() => {
+          window.scrollTo({
+            top: 3100,
+            behavior: 'smooth', // Optional: animated smooth scroll
+          });
+        }}>
           <div className="flex justify-center px-4 py-2 rounded-full bg-gray-200">
             <span className="text-base hover:underline ">อุปกรณ์เสริม</span>
           </div>
         </SwiperSlide>
-        <SwiperSlide className="!w-max">
+        <SwiperSlide className="!w-max cursor-pointer" onClick={() => {
+          window.scrollTo({
+            top: 3700,
+            behavior: 'smooth', // Optional: animated smooth scroll
+          });
+        }}>
           <div className="flex justify-center px-4 py-2 rounded-full bg-gray-200">
             <span className="text-base hover:underline ">การตั้งค่าและความช่วยเหลือ</span>
           </div>
         </SwiperSlide>
-        <SwiperSlide className="!w-max">
+        <SwiperSlide className="!w-max cursor-pointer" onClick={() => {
+          window.scrollTo({
+            top: 4400,
+            behavior: 'smooth', // Optional: animated smooth scroll
+          });
+        }}>
           <div className="flex justify-center px-4 py-2 rounded-full bg-gray-200">
             <span className="text-base hover:underline ">ประสบการณ์การใช้งาน Mac</span>
           </div>
         </SwiperSlide>
-        <SwiperSlide className="!w-max">
+        <SwiperSlide className="!w-max cursor-pointer" onClick={() => {
+          window.scrollTo({
+            top: 5100,
+            behavior: 'smooth', // Optional: animated smooth scroll
+          });
+        }}>
           <div className="flex justify-center px-4 py-2 rounded-full bg-gray-200">
             <span className="text-base hover:underline ">ร้านพิเศษของเรา</span>
           </div>
