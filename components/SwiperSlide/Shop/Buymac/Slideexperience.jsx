@@ -91,7 +91,7 @@ export default function Slideexperience() {
               alt="หนังเรื่อง Lessons in Chemistry มี Brie Larson ยืนอยู่ด้านหน้าเคาท์เตอร์ ที่ด้านขวาของเธอมีวัตถุดิบต่างๆ สำหรับประกอบอาหาร เช่น ไข่ พาสต้า และชีส ที่ด้านซ้ายของเธอเป็นเครื่องมือต่างๆ สำหรับการทดลองทางเคมี เช่น บีกเกอร์ ขวดเคมี และขวดวัดปริมาตร โดยมีสุนัขของเธอมองจ้องเธออย่างคาดหวังโผล่หัวขึ้นมาบนเคาท์เตอร์"
               src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-tv-services-lessons-in-chemistry-202310?wid=480&amp;hei=500&amp;fmt=png-alpha&amp;.v=1696949431686"
               srcSet="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-tv-services-lessons-in-chemistry-202310?wid=480&amp;hei=500&amp;fmt=png-alpha&amp;.v=1696949431686, https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-tv-services-lessons-in-chemistry-202310?wid=960&amp;hei=1000&amp;fmt=png-alpha&amp;.v=1696949431686 2x"
-              className="rounded-xl w-full px-12 py-16 scale-130 object-contain"
+              className="rounded-xl w-full px-12 py-16 scale-130 max-md:scale-150 object-contain"
             ></img>
             <div className="z-50  absolute p-7 flex flex-col  text-white w-full">
               <span className="text-xs   pb-2 ">APPLE TV+</span>
@@ -102,11 +102,11 @@ export default function Slideexperience() {
           </div>
         </Link>
       </SwiperSlide>
-      <SwiperSlide className=" !flex !w-max gap-4">
+      <SwiperSlide className=" !flex !w-max gap-4 ">
         <Link href={""} className="rounded-xl ">
-          <div className="grid grid-col-2 gap-5 items-center  !h-102  ">
-            <div className=" w-full  flex justify-center  bg-white rounded-xl shadow-lg hover:scale-104 hover:shadow-xl duration-500">
-              <div className="w-full relative ">
+          <div className="grid grid-col-2 md:gap-5 items-start  !h-102   ">
+            <div className=" w-full  flex justify-center max-md:w-80  bg-white rounded-xl shadow-lg hover:scale-104 hover:shadow-xl duration-500">
+              <div className="w-full relative">
                 <div className="absolute w-full p-6 text-white flex flex-col">
                   <span className="text-gray-400 text-xs">
                     APPLE AT COLLAGE
@@ -124,15 +124,15 @@ export default function Slideexperience() {
                   alt=""
                   src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/mac-card-25-college-202108?wid=480&amp;hei=240&amp;fmt=p-jpg&amp;qlt=95&amp;.v=1625760980000"
                   srcSet="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/mac-card-25-college-202108?wid=480&amp;hei=240&amp;fmt=p-jpg&amp;qlt=95&amp;.v=1625760980000, https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/mac-card-25-college-202108?wid=960&amp;hei=480&amp;fmt=p-jpg&amp;qlt=95&amp;.v=1625760980000 2x"
-                  className="rounded-xl w-full object-contain"
+                  className="rounded-xl w-full  object-contain"
                 />
               </div>
             </div>
-            <div className=" w-full  flex justify-center  bg-white rounded-xl shadow-lg hover:scale-104 hover:shadow-xl duration-500">
+            <div className=" w-full  flex justify-center max-md:w-80   bg-white rounded-xl shadow-lg hover:scale-104 hover:shadow-xl duration-500">
               <div className="w-full relative ">
                 <div className="absolute w-full p-6 text-white flex flex-col">
                   <span className="text-gray-400 text-xs">APPLE AT WORK</span>
-                  <span className="text-xl max-md:text-base   font-bold  pb-2">
+                  <span className="text-xl max-md:text-xs   font-bold  pb-2">
                     เพิ่มประสิทธิภาพให้ <br /> กับที่ทำงานด้วย <br /> ฮาร์ดแวร์
                     ซอฟแวร์ <br /> และบริการต่างๆ <br /> จาก Apple
                   </span>
