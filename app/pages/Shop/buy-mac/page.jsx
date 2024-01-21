@@ -12,10 +12,15 @@ import SlideSetting from "@/components/SwiperSlide/Shop/Buymac/SlideSetting";
 import Slideexperience from "@/components/SwiperSlide/Shop/Buymac/Slideexperience";
 import Slidespecial from "@/components/SwiperSlide/Shop/Buymac/Slidespecial";
 import { BsArrowUp } from "react-icons/bs";
+import ModalText from "@/components/SwiperSlide/Shop/Buymac/Modal/ModalText";
 
 export default function BuymacPage() {
   const [scrollTop, setScrollTop] = useState(0);
-  const [ValueSlide, setValueSlide] = useState(0);
+  const [ModalOpen, setModalOpen] = useState(false);
+  const [Clickset, setClickset] = useState("");
+  const [thumnailImg, setThumnailImg] = useState([]);
+  const [idxthumnail, setidxthumnail] = useState(0);
+  const [Colorproduct, setColorProduct] = useState([]);
   useEffect(() => {
     const handleScroll = (event) => {
       setScrollTop(window.scrollY);
@@ -23,21 +28,43 @@ export default function BuymacPage() {
 
     window.addEventListener("scroll", handleScroll);
 
+    document.body.style.overflowY = ModalOpen === false ? "auto" : "hidden";
+    // Clean up the effect on component unmount
     return () => {
+      document.body.style.overflowY = "auto";
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [ModalOpen]);
 
   return (
     <React.Fragment>
-      <main className="bg-gray-100 relative ">
-        <aside className="fixed flex items-end justify-end  w-full h-full">
-          <div className={`px-8 py-3 shadow-lg   rounded-full bg-gray-300 mb-14 mr-12 ${scrollTop >= 4400 ? "opacity-100 duration-1000" : "opacity-0 duration-1000"}`} onClick={() => {
-          window.scrollTo({
-            top:0,
-            behavior: 'smooth', // Optional: animated smooth scroll
-          });
-        }}>
+      <main className={`bg-gray-100 relative  `}>
+        <ModalText
+          ModalOpen={ModalOpen}
+          setModalOpen={setModalOpen}
+          Clickset={Clickset}
+          setClickset={setClickset}
+          thumnailImg={thumnailImg}
+          setThumnailImg={setThumnailImg}
+          idxthumnail={idxthumnail}
+          setidxthumnail={setidxthumnail}
+          Colorproduct={Colorproduct}
+          setColorProduct={setColorProduct}
+        />
+        <aside className="fixed flex items-end justify-end  w-full h-full ">
+          <div
+            className={`px-8 py-3 shadow-lg   rounded-full bg-gray-300 mb-14 mr-12 ${
+              scrollTop >= 4400
+                ? "opacity-100 duration-1000"
+                : "opacity-0 duration-1000"
+            }`}
+            onClick={() => {
+              window.scrollTo({
+                top: 0,
+                behavior: "smooth", // Optional: animated smooth scroll
+              });
+            }}
+          >
             <BsArrowUp />
           </div>
         </aside>
@@ -109,7 +136,8 @@ export default function BuymacPage() {
         <article className="flex justify-center w-full">
           <figure className="max-w-8xl  w-full h-full ">
             <div className="max-lg:px-8 max-w-5xl max-lg:max-w-3xl w-full h-full overflow-hidden relative">
-              <SlideText />
+              <SlideText
+              />
             </div>
           </figure>
         </article>
@@ -130,7 +158,17 @@ export default function BuymacPage() {
         <article className="flex justify-center ">
           <figure className="max-w-9xl w-full h-max  pb-3">
             <div className="w-full h-full ">
-              <SlideAllModels />
+              <SlideAllModels
+                Clickset={Clickset}
+                setClickset={setClickset}
+                ModalOpen={ModalOpen}
+                setModalOpen={setModalOpen}
+                scrollTop={scrollTop}
+                setThumnailImg={setThumnailImg}
+                setidxthumnail={setidxthumnail}
+                Colorproduct={Colorproduct}
+                setColorProduct={setColorProduct}
+              />
             </div>
           </figure>
         </article>

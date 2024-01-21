@@ -11,10 +11,19 @@ import Image from "next/image";
 // import required modules
 import { FreeMode, Pagination } from "swiper/modules";
 
-export default function SlideAllModels() {
+export default function SlideAllModels({
+  setClickset,
+  setModalOpen,
+  scrollTop,
+  setThumnailImg,
+  setidxthumnail,
+  Colorproduct,
+  setColorProduct
+}) {
   const [value, setValue] = useState("!w-max");
   const [Stylecard, setStylecard] = useState("hidden");
   const [indexHover, setindexhover] = useState(0);
+
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth >= 1025) {
@@ -47,8 +56,60 @@ export default function SlideAllModels() {
         modules={[FreeMode, Pagination]}
         className={`mySwiper !z-0 !pt-5 !px-5 !pb-10  `}
       >
-        <SwiperSlide className=" !flex !w-max gap-4 ">
-          <Link href={""} className="rounded-xl  ">
+        <SwiperSlide
+          className=" !flex !w-max gap-4 "
+          onClick={() => {
+            setClickset("MacAirM1");
+            setModalOpen(true);
+            window.scrollTo({
+              top: scrollTop,
+              behavior: "smooth", // Optional: animated smooth scroll
+            })
+            setThumnailImg([
+              {
+                idx: 0,
+                imgText:
+                  "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/mba-digitalmat-gallery-1-202111?wid=728&hei=666&fmt=png-alpha&.v=1636156517000",
+              },
+              {
+                idx: 100,
+                imgText:
+                  "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/mba-digitalmat-gallery-2-202111?wid=728&hei=666&fmt=png-alpha&.v=1664581580690",
+              },
+              {
+                idx: 200,
+                imgText:
+                  "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/mba-digitalmat-gallery-3-202111?wid=728&hei=666&fmt=png-alpha&.v=1635187293000",
+              },
+              {
+                idx: 300,
+                imgText:
+                  "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/mba-digitalmat-gallery-4-202111_GEO_TH_LANG_TH?wid=728&hei=666&fmt=png-alpha&.v=1665186030670",
+              },
+              {
+                idx: 400,
+                imgText:
+                  "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/mba-digitalmat-gallery-5-202111?wid=728&hei=666&fmt=png-alpha&.v=1635187292000",
+              },
+            ]);
+            setidxthumnail(400)
+            setColorProduct([
+              {
+                desc:"เทาสเปซเกรย์",
+                text:"https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/macbook-air-spacegray-select-20220606_SW_COLOR?wid=16&hei=16&fmt=png-alpha&.v=1654147903803"
+              },
+              {
+                desc:"ทอง",
+                text:"https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/macbook-air-gold-select-201810_SW_COLOR?wid=16&hei=16&fmt=png-alpha&.v=1654147903806"
+              },
+              {
+                desc:"เงิน",
+                text:"https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/macbook-air-silver-select-201810_SW_COLOR?wid=16&hei=16&fmt=png-alpha&.v=1654147903776"
+              },
+            ])
+          }}
+        >
+          <div className="rounded-xl  ">
             <div
               className="grid grid-col-3  bg-white items-center rounded-xl   !h-102 shadow-lg hover:scale-104 hover:shadow-xl  duration-500 "
               onMouseEnter={() => {
@@ -134,10 +195,67 @@ export default function SlideAllModels() {
                 </div>
               </div>
             </div>
-          </Link>
+          </div>
         </SwiperSlide>
-        <SwiperSlide className=" !flex !w-max gap-4 ">
-          <Link href={""} className="rounded-xl  ">
+        <SwiperSlide
+          className=" !flex !w-max gap-4 "
+          onClick={() => {
+            setClickset("MacAirM2");
+            setModalOpen(true);
+            setThumnailImg([
+              {
+                idx: 0,
+                imgText:
+                  "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/macbook-air-digitalmat-gallery-1-202206_FMT_WHH?wid=576&hei=400&fmt=png-alpha&.v=1652827325208",
+              },
+              {
+                idx: 100,
+                imgText:
+                  "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/macbook-air-digitalmat-gallery-2-202206_GEO_TH_LANG_TH?wid=728&hei=666&fmt=png-alpha&.v=1653624580061",
+              },
+              {
+                idx: 200,
+                imgText:
+                  "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/macbook-air-digitalmat-gallery-3-202206_FMT_WHH?wid=576&hei=400&fmt=png-alpha&.v=1652827325241",
+              },
+              {
+                idx: 300,
+                imgText:
+                  "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/macbook-air-digitalmat-gallery-4-202206_FMT_WHH?wid=576&hei=400&fmt=png-alpha&.v=1652827325412",
+              },
+              {
+                idx: 400,
+                imgText:
+                  "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/macbook-air-digitalmat-gallery-5-202206_FMT_WHH?wid=576&hei=400&fmt=png-alpha&.v=1652827325279",
+              },
+              {
+                idx: 500,
+                imgText:
+                  "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/macbook-air-digitalmat-gallery-6-202206_FMT_WHH?wid=576&hei=400&fmt=png-alpha&.v=1652827325456",
+              },
+            ]);
+            setidxthumnail(500)
+            setColorProduct([
+              {
+                desc:"เทาสเปซเกรย์",
+                text:"https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/macbook-air-spacegray-select-20220606_SW_COLOR?wid=16&hei=16&fmt=png-alpha&.v=1654147903803"
+              },
+              {
+                desc:"มิดไนท์",
+                text:"https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/macbook-air-midnight-select-20220606_SW_COLOR?wid=16&hei=16&fmt=png-alpha&.v=1654147903807"
+              },
+              {
+                desc:"ทอง",
+                text:"https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/macbook-air-gold-select-201810_SW_COLOR?wid=16&hei=16&fmt=png-alpha&.v=1654147903806"
+              },
+              {
+                desc:"เงิน",
+                text:"https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/macbook-air-silver-select-201810_SW_COLOR?wid=16&hei=16&fmt=png-alpha&.v=1654147903776"
+              },
+            ])
+          }}
+        >
+          <div className="rounded-xl  ">
             <div
               className="grid grid-col-3  bg-white items-center rounded-xl   !h-102 shadow-lg hover:scale-104 hover:shadow-xl  duration-500 "
               onMouseEnter={() => {
@@ -232,10 +350,16 @@ export default function SlideAllModels() {
                 </div>
               </div>
             </div>
-          </Link>
+          </div>
         </SwiperSlide>
-        <SwiperSlide className=" !flex !w-max gap-4 ">
-          <Link href={""} className="rounded-xl  ">
+        <SwiperSlide
+          className=" !flex !w-max gap-4 "
+          onClick={() => {
+            setClickset("MacAir14,16");
+            setModalOpen(true);
+          }}
+        >
+          <div className="rounded-xl  ">
             <div
               className="grid grid-col-3  bg-white items-center rounded-xl   !h-102 shadow-lg hover:scale-104 hover:shadow-xl  duration-500 "
               onMouseEnter={() => {
@@ -323,10 +447,16 @@ export default function SlideAllModels() {
                 </div>
               </div>
             </div>
-          </Link>
+          </div>
         </SwiperSlide>
-        <SwiperSlide className=" !flex !w-max gap-4 ">
-          <Link href={""} className="rounded-xl  ">
+        <SwiperSlide
+          className=" !flex !w-max gap-4 "
+          onClick={() => {
+            setClickset("iMac");
+            setModalOpen(true);
+          }}
+        >
+          <div className="rounded-xl  ">
             <div
               className="grid grid-col-3  bg-white items-center rounded-xl   !h-102 shadow-lg hover:scale-104 hover:shadow-xl  duration-500 "
               onMouseEnter={() => {
@@ -439,10 +569,16 @@ export default function SlideAllModels() {
                 </div>
               </div>
             </div>
-          </Link>
+          </div>
         </SwiperSlide>
-        <SwiperSlide className=" !flex !w-max gap-4 ">
-          <Link href={""} className="rounded-xl  ">
+        <SwiperSlide
+          className=" !flex !w-max gap-4 "
+          onClick={() => {
+            setClickset("Macmini");
+            setModalOpen(true);
+          }}
+        >
+          <div className="rounded-xl  ">
             <div
               className="grid grid-col-3  bg-white items-center rounded-xl   !h-102 shadow-lg hover:scale-104 hover:shadow-xl  duration-500 "
               onMouseEnter={() => {
@@ -503,10 +639,16 @@ export default function SlideAllModels() {
                 </div>
               </div>
             </div>
-          </Link>
+          </div>
         </SwiperSlide>
-        <SwiperSlide className=" !flex !w-max gap-4 ">
-          <Link href={""} className="rounded-xl  ">
+        <SwiperSlide
+          className=" !flex !w-max gap-4 "
+          onClick={() => {
+            setClickset("MacStudio");
+            setModalOpen(true);
+          }}
+        >
+          <div className="rounded-xl  ">
             <div
               className="grid grid-col-3  bg-white items-center rounded-xl   !h-102 shadow-lg hover:scale-104 hover:shadow-xl  duration-500 "
               onMouseEnter={() => {
@@ -567,10 +709,16 @@ export default function SlideAllModels() {
                 </div>
               </div>
             </div>
-          </Link>
+          </div>
         </SwiperSlide>
-        <SwiperSlide className=" !flex !w-max gap-4 ">
-          <Link href={""} className="rounded-xl  ">
+        <SwiperSlide
+          className=" !flex !w-max gap-4 "
+          onClick={() => {
+            setClickset("StudioDP");
+            setModalOpen(true);
+          }}
+        >
+          <div className="rounded-xl  ">
             <div
               className="grid grid-col-3  bg-white items-center rounded-xl   !h-102 shadow-lg hover:scale-104 hover:shadow-xl  duration-500 "
               onMouseEnter={() => {
@@ -630,10 +778,16 @@ export default function SlideAllModels() {
                 </div>
               </div>
             </div>
-          </Link>
+          </div>
         </SwiperSlide>
-        <SwiperSlide className=" !flex !w-max gap-4 ">
-          <Link href={""} className="rounded-xl  ">
+        <SwiperSlide
+          className=" !flex !w-max gap-4 "
+          onClick={() => {
+            setClickset("MacPro");
+            setModalOpen(true);
+          }}
+        >
+          <div className="rounded-xl  ">
             <div
               className="grid grid-col-3  bg-white items-center rounded-xl   !h-102 shadow-lg hover:scale-104 hover:shadow-xl  duration-500 "
               onMouseEnter={() => {
@@ -694,10 +848,16 @@ export default function SlideAllModels() {
                 </div>
               </div>
             </div>
-          </Link>
+          </div>
         </SwiperSlide>
-        <SwiperSlide className=" !flex !w-max gap-4 ">
-          <Link href={""} className="rounded-xl  ">
+        <SwiperSlide
+          className=" !flex !w-max gap-4 "
+          onClick={() => {
+            setClickset("PDXDR");
+            setModalOpen(true);
+          }}
+        >
+          <div className="rounded-xl  ">
             <div
               className="grid grid-col-3  bg-white items-center rounded-xl   !h-102 shadow-lg hover:scale-104 hover:shadow-xl  duration-500 "
               onMouseEnter={() => {
@@ -726,8 +886,8 @@ export default function SlideAllModels() {
                   className="max-md:hidden px-24 pt-20"
                 ></img>
                 <img
-                   width="253"
-                   height="236"
+                  width="253"
+                  height="236"
                   alt=""
                   src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/mac-card-40-mac-pro-display-202108_FMT_WHH?wid=309&amp;hei=450&amp;fmt=jpeg&amp;qlt=95&amp;.v=1625866834000"
                   srcSet="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/mac-card-40-mac-pro-display-202108_FMT_WHH?wid=309&amp;hei=450&amp;fmt=jpeg&amp;qlt=95&amp;.v=1625866834000, https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/mac-card-40-mac-pro-display-202108_FMT_WHH?wid=618&amp;hei=900&amp;fmt=jpeg&amp;qlt=95&amp;.v=1625866834000 2x"
@@ -756,7 +916,7 @@ export default function SlideAllModels() {
                 </div>
               </div>
             </div>
-          </Link>
+          </div>
         </SwiperSlide>
       </Swiper>
     </React.Fragment>
