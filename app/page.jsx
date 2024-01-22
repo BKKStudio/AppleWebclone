@@ -328,15 +328,15 @@ export default function Home() {
             {/* ipad */}
             <Link
               href={""}
-              className="   bg-white-gray  w-full h-full    overflow-hidden  "
+              className="   bg-black  w-full h-full    overflow-hidden  "
             >
               <div className="relative flex flex-col w-full h-max pb-24 items-center">
                 <div className=" flex flex-col justify-center items-center  z-40 pt-8  w-full">
                   <span className="flex font-bold text-3xl">
-                    <h2 className="pt-1">iPad</h2>
+                    <h2 className="pt-1 max-md:text-white">iPad</h2>
                   </span>
                   <span className="flex  lg:text-xl">
-                    <h2 className="text-gray-600 ">รักเลย วาดเลย เอาใจไปเลย</h2>
+                    <h2 className="text-gray-600 max-md:text-white">รักเลย วาดเลย เอาใจไปเลย</h2>
                   </span>
                   <span className="flex gap-5 pt-2 lg:text-lg text-base">
                     <span className="text-blue-600 flex items-center hover:underline">
